@@ -38,17 +38,22 @@ Las tecnologías consideradas para el desarrollo incluyen:
 
 Las bibliotecas, modelos y herramientas específicas se documentarán conforme avance la implementación.
 
-## Metodología de desarrollo
+## Metodología de investigación y desarrollo
 
-El proyecto utiliza una metodología iterativa e incremental, organizada en las siguientes etapas:
+El proyecto adopta **Design Science Research (DSR)**, estructurada mediante **Design Science Research Methodology (DSRM)**, como enfoque metodológico para el diseño, desarrollo y evaluación de un artefacto tecnológico orientado al aprendizaje de programación industrial.
 
-1. Definición de criterios y estrategias candidatas.
-2. Recopilación de documentación técnica y educativa.
-3. Extracción, limpieza y estructuración de documentos.
-4. Preparación de datos para RAG y QLoRA.
-5. Implementación de RAG y Fine-Tuning mediante QLoRA.
-6. Evaluación comparativa y análisis de factibilidad de una arquitectura híbrida.
-7. Integración del chatbot, pruebas y validación.
+La metodología comprende seis fases:
+
+1. **Identificación del problema:** análisis de las dificultades de aprendizaje y acceso a conocimiento especializado sobre programación de IPC.
+2. **Definición de objetivos:** establecimiento de requisitos técnicos, educativos y computacionales del chatbot.
+3. **Diseño y desarrollo:** construcción y configuración de las alternativas experimentales basadas en un LLM, RAG, QLoRA y una posible arquitectura híbrida.
+4. **Demostración:** ejecución de las configuraciones mediante consultas y escenarios representativos del dominio.
+5. **Evaluación:** comparación de calidad técnica, utilidad educativa, trazabilidad, latencia y consumo de recursos computacionales.
+6. **Comunicación:** documentación de los resultados experimentales, decisiones de diseño, limitaciones y características del artefacto seleccionado.
+
+El proceso contempla ciclos de diseño, demostración, evaluación y ajuste cuando los resultados obtenidos requieran nuevas iteraciones.
+
+La selección de la arquitectura final se realizará a partir de evidencia experimental y de su viabilidad de ejecución con los recursos disponibles.
 
 ## Estado actual del proyecto
 
