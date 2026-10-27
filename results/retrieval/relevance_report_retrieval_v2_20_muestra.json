@@ -1,0 +1,58 @@
+{
+  "fecha_utc": "2026-10-19T13:56:59.065060+00:00",
+  "total_preguntas": 20,
+  "preguntas_completamente_anotadas": 1,
+  "fragmentos_unicos_por_pregunta": 103,
+  "fragmentos_anotados": 6,
+  "configuraciones": {
+    "A": {
+      "precision_at_3": 0.0,
+      "ndcg_at_3": 0.6309297535714575,
+      "hit_at_3": 0.0,
+      "precision_por_categoria": {
+        "fundamentos": 0.0
+      },
+      "formatos_en_preguntas_anotadas": {
+        "markdown_documental": 1,
+        "transcripcion_video": 1,
+        "pdf_convertido_markdown": 1
+      }
+    },
+    "B": {
+      "precision_at_3": 0.3333333333333333,
+      "ndcg_at_3": 1.0,
+      "hit_at_3": 1.0,
+      "precision_por_categoria": {
+        "fundamentos": 0.3333333333333333
+      },
+      "formatos_en_preguntas_anotadas": {
+        "pdf_convertido_markdown": 1,
+        "transcripcion_video": 2
+      }
+    },
+    "C": {
+      "precision_at_3": 0.3333333333333333,
+      "ndcg_at_3": 1.0,
+      "hit_at_3": 1.0,
+      "precision_por_categoria": {
+        "fundamentos": 0.3333333333333333
+      },
+      "formatos_en_preguntas_anotadas": {
+        "pdf_convertido_markdown": 2,
+        "transcripcion_video": 1
+      }
+    },
+    "D": {
+      "precision_at_3": 0.3333333333333333,
+      "ndcg_at_3": 0.9639404333166532,
+      "hit_at_3": 1.0,
+      "precision_por_categoria": {
+        "fundamentos": 0.3333333333333333
+      },
+      "formatos_en_preguntas_anotadas": {
+        "pdf_convertido_markdown": 1,
+        "transcripcion_video": 2
+      }
+    }
+  }
+}

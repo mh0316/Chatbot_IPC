@@ -1,0 +1,534 @@
+[
+  {
+    "id": "FUND_001",
+    "category": "fundamentos",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "¿Qué es un computador industrial IPC y cuál es su función dentro de un sistema de automatización?"
+  },
+  {
+    "id": "FUND_002",
+    "category": "fundamentos",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "¿Cuáles son las principales diferencias entre un IPC industrial y un computador de propósito general?"
+  },
+  {
+    "id": "FUND_003",
+    "category": "fundamentos",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "Explique la diferencia entre un IPC, un PLC y un controlador embebido. ¿En qué escenario utilizaría cada uno?"
+  },
+  {
+    "id": "FUND_004",
+    "category": "fundamentos",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "¿Por qué la ejecución determinista es importante en sistemas de control industrial?"
+  },
+  {
+    "id": "FUND_005",
+    "category": "fundamentos",
+    "type": "application",
+    "difficulty": "intermediate",
+    "question": "Describa el ciclo básico de adquisición de entradas, ejecución de lógica y actualización de salidas en un sistema de control industrial."
+  },
+  {
+    "id": "FUND_006",
+    "category": "fundamentos",
+    "type": "design",
+    "difficulty": "advanced",
+    "question": "Se debe controlar una máquina con visión artificial, movimiento, adquisición de datos y comunicación con una base de datos. Justifique si utilizaría un IPC, un PLC tradicional o una combinación de ambos."
+  },
+  {
+    "id": "ST_001",
+    "category": "structured_text",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "¿Qué es Structured Text y para qué se utiliza en programación industrial?"
+  },
+  {
+    "id": "ST_002",
+    "category": "structured_text",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "Explique la función de las estructuras IF, CASE, FOR y WHILE en Structured Text."
+  },
+  {
+    "id": "ST_003",
+    "category": "structured_text",
+    "type": "programming",
+    "difficulty": "intermediate",
+    "question": "Escriba código Structured Text que active una salida Motor cuando Start sea TRUE y la desactive cuando Stop sea TRUE."
+  },
+  {
+    "id": "ST_004",
+    "category": "structured_text",
+    "type": "programming",
+    "difficulty": "intermediate",
+    "question": "Implemente en Structured Text un enclavamiento de marcha/parada con una entrada de parada de emergencia."
+  },
+  {
+    "id": "ST_005",
+    "category": "structured_text",
+    "type": "analysis",
+    "difficulty": "intermediate",
+    "question": "Explique qué ocurre con las variables de un programa Structured Text entre ciclos consecutivos de ejecución."
+  },
+  {
+    "id": "ST_006",
+    "category": "structured_text",
+    "type": "programming",
+    "difficulty": "intermediate",
+    "question": "Escriba un programa que cuente flancos positivos de una entrada digital y reinicie el contador mediante una señal Reset."
+  },
+  {
+    "id": "ST_007",
+    "category": "structured_text",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "Un programa utiliza un WHILE cuyo criterio de salida nunca cambia. Explique qué consecuencias puede tener esto dentro de una tarea de control en tiempo real."
+  },
+  {
+    "id": "ST_008",
+    "category": "structured_text",
+    "type": "programming",
+    "difficulty": "advanced",
+    "question": "Diseñe en Structured Text una secuencia con tres estados: IDLE, RUNNING y ERROR, utilizando CASE."
+  },
+  {
+    "id": "ST_009",
+    "category": "structured_text",
+    "type": "analysis",
+    "difficulty": "advanced",
+    "question": "Compare el uso de Structured Text con Ladder Diagram para implementar algoritmos complejos y lógica secuencial."
+  },
+  {
+    "id": "ST_010",
+    "category": "structured_text",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "Un motor se activa correctamente pero no se desactiva cuando se pulsa Stop. Describa cómo revisaría la lógica Structured Text para localizar el problema."
+  },
+  {
+    "id": "FB_001",
+    "category": "function_blocks",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "¿Qué es un Function Block según IEC 61131-3?"
+  },
+  {
+    "id": "FB_002",
+    "category": "function_blocks",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "¿Cuál es la diferencia entre una FUNCTION y un FUNCTION_BLOCK?"
+  },
+  {
+    "id": "FB_003",
+    "category": "function_blocks",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "¿Por qué dos instancias del mismo Function Block pueden tener estados internos diferentes?"
+  },
+  {
+    "id": "FB_004",
+    "category": "function_blocks",
+    "type": "programming",
+    "difficulty": "intermediate",
+    "question": "Diseñe conceptualmente un Function Block para controlar un motor con Start, Stop, EmergencyStop y una salida Running."
+  },
+  {
+    "id": "FB_005",
+    "category": "function_blocks",
+    "type": "programming",
+    "difficulty": "advanced",
+    "question": "Diseñe un Function Block reutilizable que detecte una alarma cuando una variable analógica permanezca sobre un límite durante más de cinco segundos."
+  },
+  {
+    "id": "FB_006",
+    "category": "function_blocks",
+    "type": "design",
+    "difficulty": "advanced",
+    "question": "Explique cuándo conviene encapsular una lógica de control en un Function Block en lugar de escribirla directamente en el programa principal."
+  },
+  {
+    "id": "FB_007",
+    "category": "function_blocks",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "Dos motores utilizan el mismo Function Block pero interfieren entre sí. ¿Qué error de implementación podría provocar este comportamiento?"
+  },
+  {
+    "id": "RT_001",
+    "category": "tiempo_real",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "¿Qué significa que una tarea sea cíclica en un sistema de control industrial?"
+  },
+  {
+    "id": "RT_002",
+    "category": "tiempo_real",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "¿Qué diferencia existe entre el tiempo de ciclo configurado de una tarea y el tiempo real que tarda en ejecutarse su código?"
+  },
+  {
+    "id": "RT_003",
+    "category": "tiempo_real",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "¿Qué ocurre si la ejecución de una tarea tarda más que su período configurado?"
+  },
+  {
+    "id": "RT_004",
+    "category": "tiempo_real",
+    "type": "programming",
+    "difficulty": "intermediate",
+    "question": "Explique cómo utilizaría un temporizador TON para activar una salida cinco segundos después de recibir una señal."
+  },
+  {
+    "id": "RT_005",
+    "category": "tiempo_real",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "Compare TON, TOF y TP y entregue un ejemplo industrial de cada uno."
+  },
+  {
+    "id": "RT_006",
+    "category": "tiempo_real",
+    "type": "analysis",
+    "difficulty": "advanced",
+    "question": "Una tarea está configurada para ejecutarse cada 1 ms, pero el código tarda 1,5 ms. Analice las posibles consecuencias."
+  },
+  {
+    "id": "RT_007",
+    "category": "tiempo_real",
+    "type": "design",
+    "difficulty": "advanced",
+    "question": "Un sistema posee una tarea de movimiento de 1 ms y una tarea de supervisión de 100 ms. Explique por qué es razonable utilizar períodos diferentes."
+  },
+  {
+    "id": "RT_008",
+    "category": "tiempo_real",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "Un proceso presenta jitter y respuestas inconsistentes. Describa qué aspectos de las tareas y tiempos de ejecución investigaría."
+  },
+  {
+    "id": "ECAT_001",
+    "category": "ethercat_io",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "¿Qué es EtherCAT y cuál es su función dentro de un sistema de automatización?"
+  },
+  {
+    "id": "ECAT_002",
+    "category": "ethercat_io",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "Explique el papel del EtherCAT Master y de los dispositivos esclavos."
+  },
+  {
+    "id": "ECAT_003",
+    "category": "ethercat_io",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "¿Qué relación existe entre las variables del programa PLC y los canales físicos de entrada y salida?"
+  },
+  {
+    "id": "ECAT_004",
+    "category": "ethercat_io",
+    "type": "configuration",
+    "difficulty": "intermediate",
+    "question": "Describa conceptualmente el proceso para asociar una entrada digital EtherCAT con una variable BOOL de un programa PLC en TwinCAT 3."
+  },
+  {
+    "id": "ECAT_005",
+    "category": "ethercat_io",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "Un dispositivo EtherCAT aparece detectado pero no alcanza el estado operacional. ¿Qué pasos de diagnóstico realizaría?"
+  },
+  {
+    "id": "ECAT_006",
+    "category": "ethercat_io",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "Una entrada física cambia eléctricamente, pero la variable vinculada en el programa permanece siempre en FALSE. Indique posibles causas."
+  },
+  {
+    "id": "ECAT_007",
+    "category": "ethercat_io",
+    "type": "theory",
+    "difficulty": "advanced",
+    "question": "¿Por qué la sincronización temporal es especialmente importante en aplicaciones EtherCAT con múltiples ejes de movimiento?"
+  },
+  {
+    "id": "ECAT_008",
+    "category": "ethercat_io",
+    "type": "design",
+    "difficulty": "advanced",
+    "question": "Explique cómo organizaría las variables de I/O de una máquina con varios módulos EtherCAT para mantener el programa legible y mantenible."
+  },
+  {
+    "id": "ADS_001",
+    "category": "ads_comunicaciones",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "¿Qué es ADS dentro del ecosistema TwinCAT?"
+  },
+  {
+    "id": "ADS_002",
+    "category": "ads_comunicaciones",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "¿Para qué puede utilizarse ADS entre una aplicación externa y un programa PLC?"
+  },
+  {
+    "id": "ADS_003",
+    "category": "ads_comunicaciones",
+    "type": "application",
+    "difficulty": "intermediate",
+    "question": "Describa conceptualmente cómo una aplicación externa podría leer una variable PLC mediante ADS."
+  },
+  {
+    "id": "ADS_004",
+    "category": "ads_comunicaciones",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "Una aplicación ADS puede comunicarse con el IPC pero no puede leer variables PLC. ¿Qué elementos revisaría?"
+  },
+  {
+    "id": "ADS_005",
+    "category": "ads_comunicaciones",
+    "type": "design",
+    "difficulty": "advanced",
+    "question": "Compare el uso de ADS con el acceso directo a señales de I/O. ¿Qué función cumple cada mecanismo?"
+  },
+  {
+    "id": "LIB_001",
+    "category": "librerias_organizacion",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "¿Qué función cumplen las librerías en un proyecto TwinCAT 3?"
+  },
+  {
+    "id": "LIB_002",
+    "category": "librerias_organizacion",
+    "type": "design",
+    "difficulty": "intermediate",
+    "question": "¿Por qué es conveniente utilizar bloques y librerías reutilizables en proyectos industriales grandes?"
+  },
+  {
+    "id": "LIB_003",
+    "category": "librerias_organizacion",
+    "type": "maintenance",
+    "difficulty": "advanced",
+    "question": "¿Qué problemas pueden aparecer si un proyecto depende de una versión diferente de una librería respecto de aquella con la que fue desarrollado?"
+  },
+  {
+    "id": "LIB_004",
+    "category": "librerias_organizacion",
+    "type": "design",
+    "difficulty": "advanced",
+    "question": "Explique cómo organizaría código reutilizable para varios tipos de motores presentes en distintas máquinas."
+  },
+  {
+    "id": "HMI_001",
+    "category": "hmi_visualizacion",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "¿Qué función cumple una HMI dentro de un sistema de automatización industrial?"
+  },
+  {
+    "id": "HMI_002",
+    "category": "hmi_visualizacion",
+    "type": "design",
+    "difficulty": "intermediate",
+    "question": "¿Qué variables mostraría en una HMI para supervisar un motor industrial y por qué?"
+  },
+  {
+    "id": "HMI_003",
+    "category": "hmi_visualizacion",
+    "type": "design",
+    "difficulty": "advanced",
+    "question": "Explique cómo debería representarse una alarma crítica en una interfaz de operación para evitar interpretaciones ambiguas."
+  },
+  {
+    "id": "HMI_004",
+    "category": "hmi_visualizacion",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "La variable PLC cambia correctamente, pero el valor mostrado en la HMI no se actualiza. ¿Qué aspectos revisaría?"
+  },
+  {
+    "id": "SAFE_001",
+    "category": "seguridad_buenas_practicas",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "¿Por qué una parada de emergencia no debería depender exclusivamente de lógica de software estándar?"
+  },
+  {
+    "id": "SAFE_002",
+    "category": "seguridad_buenas_practicas",
+    "type": "design",
+    "difficulty": "advanced",
+    "question": "Explique la diferencia entre una condición normal de parada y una condición de seguridad."
+  },
+  {
+    "id": "SAFE_003",
+    "category": "seguridad_buenas_practicas",
+    "type": "analysis",
+    "difficulty": "advanced",
+    "question": "Un desarrollador propone ignorar temporalmente una señal de seguridad para facilitar pruebas. Explique los riesgos y qué alternativa utilizaría."
+  },
+  {
+    "id": "TC_001",
+    "category": "twincat",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "¿Qué es TwinCAT 3 y para qué se utiliza?"
+  },
+  {
+    "id": "TC_002",
+    "category": "twincat",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "¿Qué es una POU en TwinCAT 3 y qué tipos principales existen?"
+  },
+  {
+    "id": "TC_003",
+    "category": "twincat",
+    "type": "configuration",
+    "difficulty": "intermediate",
+    "question": "Describa conceptualmente el procedimiento para crear un proyecto PLC nuevo en TwinCAT 3."
+  },
+  {
+    "id": "TC_004",
+    "category": "twincat",
+    "type": "configuration",
+    "difficulty": "intermediate",
+    "question": "¿Cómo se crea una tarea cíclica en TwinCAT 3 y cómo se asocia un programa PLC a dicha tarea?"
+  },
+  {
+    "id": "TC_005",
+    "category": "twincat",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "Explique la diferencia entre compilar un proyecto, activar una configuración y poner el sistema en ejecución en TwinCAT 3."
+  },
+  {
+    "id": "TC_006",
+    "category": "twincat",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "Un proyecto TwinCAT 3 compila correctamente, pero el programa PLC no parece ejecutarse. ¿Qué elementos revisaría para localizar el problema?"
+  },
+  {
+    "id": "TC_007",
+    "category": "twincat",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "Después de modificar la configuración de hardware en TwinCAT 3, las variables de entrada y salida dejan de actualizarse correctamente. Describa un procedimiento de diagnóstico."
+  },
+  {
+    "id": "TC_008",
+    "category": "twincat",
+    "type": "application",
+    "difficulty": "advanced",
+    "question": "Explique cómo utilizaría la monitorización online de variables en TwinCAT 3 para depurar una secuencia de control que no se comporta como se esperaba."
+  },
+  {
+    "id": "TC_009",
+    "category": "twincat",
+    "type": "design",
+    "difficulty": "advanced",
+    "question": "Proponga una estructura de proyecto TwinCAT 3 para una máquina que incluya control de motores, gestión de alarmas, comunicaciones industriales y supervisión."
+  },
+  {
+    "id": "ST_CODE_001",
+    "category": "structured_text",
+    "type": "programming",
+    "difficulty": "intermediate",
+    "question": "Escriba código Structured Text que utilice un temporizador TON para activar una salida únicamente después de que una entrada permanezca TRUE durante 3 segundos."
+  },
+  {
+    "id": "ST_CODE_002",
+    "category": "structured_text",
+    "type": "analysis",
+    "difficulty": "intermediate",
+    "question": "Analice el siguiente código Structured Text y explique qué ocurre en cada ciclo de ejecución:\n\nMotor := Start AND NOT Stop;"
+  },
+  {
+    "id": "ST_CODE_003",
+    "category": "structured_text",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "El siguiente enfoque pretende contar flancos positivos de una entrada digital, pero incrementa el contador en todos los ciclos mientras Input permanece en TRUE. Explique el problema y escriba una versión corregida que incremente el contador solo una vez por flanco positivo."
+  },
+  {
+    "id": "ST_CODE_004",
+    "category": "structured_text",
+    "type": "programming",
+    "difficulty": "advanced",
+    "question": "Implemente en Structured Text una máquina de estados con los estados IDLE, STARTING, RUNNING, STOPPING y ERROR utilizando CASE. Incluya transiciones básicas entre estados."
+  },
+  {
+    "id": "ST_CODE_005",
+    "category": "structured_text",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "Un programa utiliza un temporizador TON cuya instancia se declara de manera que no conserva correctamente su estado entre ciclos. Explique por qué esto puede provocar un funcionamiento incorrecto y muestre cómo debería declararse y utilizarse el temporizador."
+  },
+  {
+    "id": "FB_CODE_001",
+    "category": "function_blocks",
+    "type": "programming",
+    "difficulty": "intermediate",
+    "question": "Implemente conceptualmente un FUNCTION_BLOCK llamado FB_Motor con entradas Start, Stop y EmergencyStop, y salidas Running y Fault. Explique brevemente la lógica utilizada."
+  },
+  {
+    "id": "FB_CODE_002",
+    "category": "function_blocks",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "Dos motores utilizan accidentalmente la misma instancia de un FUNCTION_BLOCK de control. Explique por qué pueden interferir entre sí y muestre conceptualmente cómo debería corregirse la implementación."
+  },
+  {
+    "id": "RT_CODE_001",
+    "category": "tiempo_real",
+    "type": "analysis",
+    "difficulty": "advanced",
+    "question": "Un programa ejecutado dentro de una tarea de 1 ms contiene un bucle FOR con 100000 iteraciones. Analice los riesgos temporales que puede provocar y proponga alternativas de diseño."
+  },
+  {
+    "id": "ECAT_CODE_001",
+    "category": "ethercat_io",
+    "type": "application",
+    "difficulty": "intermediate",
+    "question": "Muestre conceptualmente cómo declararía en Structured Text una variable BOOL destinada a vincularse con una entrada digital EtherCAT y explique cómo se realiza posteriormente la asociación entre la variable y el canal físico en TwinCAT 3."
+  },
+  {
+    "id": "ADS_CODE_001",
+    "category": "ads_comunicaciones",
+    "type": "programming",
+    "difficulty": "advanced",
+    "question": "Escriba pseudocódigo o código de ejemplo que muestre cómo una aplicación externa podría leer una variable de un programa PLC mediante ADS. Explique qué información o parámetros serían necesarios para realizar la comunicación."
+  },
+  {
+    "id": "ST_CODE_006",
+    "category": "structured_text",
+    "type": "programming",
+    "difficulty": "intermediate",
+    "question": "Escriba código Structured Text que controle dos salidas MotorA y MotorB de manera que nunca puedan estar activas al mismo tiempo. Incluya una señal Stop que desactive ambas."
+  },
+  {
+    "id": "ST_CODE_007",
+    "category": "structured_text",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "Revise conceptualmente un programa Structured Text en el que una salida queda permanentemente activada después de pulsar Start aunque posteriormente Start vuelva a FALSE. Explique qué tipo de lógica podría estar provocando este comportamiento y proponga una corrección."
+  }
+]

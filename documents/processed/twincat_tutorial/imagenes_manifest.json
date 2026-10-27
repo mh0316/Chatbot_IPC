@@ -1,0 +1,281 @@
+{
+  "pdf": "/home/mhenriquez/chatbot_ipc/documents/raw/Corpus documental Beckhoff/TwinCAT 3/Tutorial TwinCAT 3.pdf",
+  "paginas": 40,
+  "imagenes": [
+    {
+      "pagina": 1,
+      "xref": 11,
+      "imagen": "assets_v2/imagen_b31fc7b8225e8731.jpeg",
+      "rectangulo": [
+        118.8,
+        233.6,
+        493.2,
+        349.55
+      ]
+    },
+    {
+      "pagina": 4,
+      "xref": 76,
+      "imagen": "assets_v2/imagen_a9e87586cd8b3f9c.png",
+      "rectangulo": [
+        75.6,
+        313.6,
+        536.4,
+        547.05
+      ]
+    },
+    {
+      "pagina": 5,
+      "xref": 94,
+      "imagen": "assets_v2/imagen_bdca91ba2675495f.png",
+      "rectangulo": [
+        72.0,
+        385.65,
+        540.0,
+        622.75
+      ]
+    },
+    {
+      "pagina": 7,
+      "xref": 165,
+      "imagen": "assets_v2/imagen_479be0b287948273.jpeg",
+      "rectangulo": [
+        81.0,
+        309.6,
+        531.0,
+        565.3
+      ]
+    },
+    {
+      "pagina": 9,
+      "xref": 217,
+      "imagen": "assets_v2/imagen_7db2b3332fe245a9.jpeg",
+      "rectangulo": [
+        81.0,
+        276.7,
+        531.0,
+        546.75
+      ]
+    },
+    {
+      "pagina": 10,
+      "xref": 234,
+      "imagen": "assets_v2/imagen_e0bd03965dc483d2.jpeg",
+      "rectangulo": [
+        81.0,
+        280.7,
+        531.0,
+        533.0
+      ]
+    },
+    {
+      "pagina": 13,
+      "xref": 270,
+      "imagen": "assets_v2/imagen_55145f5bbe8e8c6b.jpeg",
+      "rectangulo": [
+        100.8,
+        245.4,
+        511.2,
+        429.2
+      ]
+    },
+    {
+      "pagina": 15,
+      "xref": 293,
+      "imagen": "assets_v2/imagen_c5616d35ff584aa2.jpeg",
+      "rectangulo": [
+        100.8,
+        212.1,
+        511.2,
+        411.25
+      ]
+    },
+    {
+      "pagina": 16,
+      "xref": 306,
+      "imagen": "assets_v2/imagen_5c4d3008768d29df.jpeg",
+      "rectangulo": [
+        108.0,
+        46.85,
+        504.0,
+        178.2
+      ]
+    },
+    {
+      "pagina": 17,
+      "xref": 328,
+      "imagen": "assets_v2/imagen_1a8caae97c7c076f.jpeg",
+      "rectangulo": [
+        104.4,
+        433.4,
+        507.6,
+        622.55
+      ]
+    },
+    {
+      "pagina": 19,
+      "xref": 347,
+      "imagen": "assets_v2/imagen_460e00a07d0303b5.jpeg",
+      "rectangulo": [
+        104.4,
+        162.05,
+        507.6,
+        391.55
+      ]
+    },
+    {
+      "pagina": 20,
+      "xref": 362,
+      "imagen": "assets_v2/imagen_e32e7ba3e2dab4ea.jpeg",
+      "rectangulo": [
+        104.4,
+        46.85,
+        507.6,
+        187.7
+      ]
+    },
+    {
+      "pagina": 21,
+      "xref": 380,
+      "imagen": "assets_v2/imagen_3cc17fd9854ed353.jpeg",
+      "rectangulo": [
+        108.0,
+        414.5,
+        504.0,
+        601.05
+      ]
+    },
+    {
+      "pagina": 23,
+      "xref": 400,
+      "imagen": "assets_v2/imagen_1e3a0bfe9f7191f4.jpeg",
+      "rectangulo": [
+        108.0,
+        212.1,
+        504.0,
+        404.7
+      ]
+    },
+    {
+      "pagina": 24,
+      "xref": 413,
+      "imagen": "assets_v2/imagen_d2297f358b5506fc.jpeg",
+      "rectangulo": [
+        118.8,
+        46.85,
+        493.2,
+        192.05
+      ]
+    },
+    {
+      "pagina": 25,
+      "xref": 429,
+      "imagen": "assets_v2/imagen_2aa6e2cd26595cb0.jpeg",
+      "rectangulo": [
+        97.2,
+        265.05,
+        514.8,
+        445.05
+      ]
+    },
+    {
+      "pagina": 26,
+      "xref": 441,
+      "imagen": "assets_v2/imagen_115963d8e8857296.jpeg",
+      "rectangulo": [
+        100.8,
+        46.85,
+        511.2,
+        251.1
+      ]
+    },
+    {
+      "pagina": 27,
+      "xref": 459,
+      "imagen": "assets_v2/imagen_a137cae8ae690957.jpeg",
+      "rectangulo": [
+        100.8,
+        265.05,
+        511.2,
+        491.6
+      ]
+    },
+    {
+      "pagina": 28,
+      "xref": 470,
+      "imagen": "assets_v2/imagen_0558847f70cb21c1.jpeg",
+      "rectangulo": [
+        104.4,
+        46.85,
+        507.6,
+        203.95
+      ]
+    },
+    {
+      "pagina": 30,
+      "xref": 498,
+      "imagen": "assets_v2/imagen_1530aecf400f7a1c.jpeg",
+      "rectangulo": [
+        100.8,
+        257.2,
+        511.2,
+        456.95
+      ]
+    },
+    {
+      "pagina": 31,
+      "xref": 509,
+      "imagen": "assets_v2/imagen_8566fc85be5d7e4d.jpeg",
+      "rectangulo": [
+        100.8,
+        46.85,
+        511.2,
+        249.45
+      ]
+    },
+    {
+      "pagina": 32,
+      "xref": 525,
+      "imagen": "assets_v2/imagen_2dffe340ac3d6cd2.jpeg",
+      "rectangulo": [
+        97.2,
+        227.75,
+        514.8,
+        472.25
+      ]
+    },
+    {
+      "pagina": 33,
+      "xref": 537,
+      "imagen": "assets_v2/imagen_d32bd92d4d8740f7.jpeg",
+      "rectangulo": [
+        100.8,
+        46.85,
+        511.2,
+        252.85
+      ]
+    },
+    {
+      "pagina": 34,
+      "xref": 551,
+      "imagen": "assets_v2/imagen_c425986dcd367edf.jpeg",
+      "rectangulo": [
+        100.8,
+        261.05,
+        511.2,
+        474.8
+      ]
+    },
+    {
+      "pagina": 35,
+      "xref": 564,
+      "imagen": "assets_v2/imagen_f89ad8b921df9371.jpeg",
+      "rectangulo": [
+        108.0,
+        46.85,
+        504.0,
+        228.05
+      ]
+    }
+  ]
+}

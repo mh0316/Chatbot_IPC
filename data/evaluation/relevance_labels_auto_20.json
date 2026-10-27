@@ -1,0 +1,582 @@
+{
+  "modelo": "Qwen/Qwen3-VL-4B-Instruct",
+  "metodo": "LLM_as_a_judge",
+  "escala": [
+    0,
+    1,
+    2
+  ],
+  "ids_preguntas": [
+    "FUND_001",
+    "FUND_005",
+    "ST_005",
+    "RT_003",
+    "ECAT_002",
+    "ECAT_005",
+    "ADS_002",
+    "ADS_005",
+    "LIB_001",
+    "LIB_003",
+    "HMI_001",
+    "HMI_003",
+    "SAFE_001",
+    "SAFE_003",
+    "TC_002",
+    "TC_003",
+    "ST_CODE_005",
+    "FB_CODE_001",
+    "FB_CODE_002",
+    "RT_CODE_001"
+  ],
+  "juicios": {
+    "FUND_001": {
+      "7fa09af6d30bb45d502f6c7728acc4f930adb625cad7ea0f07e55d7c030b6422": {
+        "relevance": 0,
+        "evaluador": "humano"
+      },
+      "fa765dfd09346500e8933adfbdbcde14f57bda713bb5c3bd977815fb910c80f5": {
+        "relevance": 1,
+        "evaluador": "humano"
+      },
+      "a51b280684249563d53fb147edc974a73bb4f403b91cd86151a108760f512d3b": {
+        "relevance": 0,
+        "evaluador": "humano"
+      },
+      "5e265c1e6c98998ba18953cf5f3fcb221208345e1296db6dcfb07e478add7dbd": {
+        "relevance": 2,
+        "evaluador": "humano"
+      },
+      "63792827c21db0d7db72c268bffd28a2d432a47b24e92e66cc1fbcb0c59ba6bf": {
+        "relevance": 0,
+        "evaluador": "humano"
+      },
+      "2be33eb372005c281e8157a13aeb2d46589afd3de616dbc430bca84a65fcc98b": {
+        "relevance": 1,
+        "evaluador": "humano"
+      }
+    },
+    "FUND_005": {
+      "5a3a8226f66516e0f5b78029a56ef1936fb76fa1401881d0ae05dff5dcd8326c": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "ef37be05598c6d130567e3ea8e9c54d4ef5c98e85d101a60be468f0aff4fe9c0": {
+        "relevance": 0,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "e65ec0572c3b148d3aa163d402053baa9c2e4ce4d866500bc514699218ef8bd2": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "05a192f7654de020fd89faddc929d681da5da515c6a16e6d42bc0ef0e6c17f32": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "ST_005": {
+      "a5d51661be471568b72c1edf6b7774fe9f6d09e602c1f68a166664ca1533174c": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "9ff9834d653ee6d0b131436bc7a10db50147eb2190e7071ea71e94f5ee7608c7": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "3602fa86e0073a5a631e591c69c82c13f83bed1412c1a5150142e4092874509f": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "b8659832b96621d601bf00c59ca49ef73f54af5a6690bedf4d2aa4a01a6d6f48": {
+        "relevance": 0,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "a2163e6b9e05c51aa93db32b91d937a9092a756ea26ace89ee2b88cd08323f59": {
+        "relevance": 0,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "21e027c950e662931c7e86d48d0da8c51282bf89a0dc8c63f5cd41686760177d": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "RT_003": {
+      "b0091787d24ae42077b8cd242838d7e16ac615c31dfd3c0443183600b56a92e0": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "145468354dbac271e408ebe1dfcfe3009a59741f71a1b7c84b0064fbded950f6": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "f3e1f090d6f4923dbb674b5f077a90a86c7622dad38d080d405cce7ebc92b47b": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "20873506eb1fc486faaff74b60d35015efd26bb072e1abbf3d021e3ea31524ff": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "7aa86901739fb52a0aef3976cb3f192dfe3ece9e42eb57e392efd0e953b3f844": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "ECAT_002": {
+      "0068d75bbc20f40cdd4a46d6a31397e6711b9e8fbaddb6657903841b758830f4": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "0f7c5e57c1f82a0867f78cd00a05d71af01b1345d7d778da4419339ae0a4d45f": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "e4c870ea4aac0cd83d003a8813671167d6aa3c35250a98d7a7418bd9f3997a87": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "ECAT_005": {
+      "b906b19ee61b0c70215fbc5716f963d059d0f97f3c7a07a20f7ab7a85dde2be4": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "ddead965a5de5e18f55bb02864e493b8647900a97e14c45eef2ad836c48670bf": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "55ee07ed695a06ffd52ae66cfe0a1f9665301a3cadf13317c51042c56c8e195d": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "ff43a47d40701800c2ad89773394764d762ef4f09aad044b999bcd2670ff2ba5": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "215c55976eb2f3c9df490e41ac40e81454df56d3e9bbe46ea62e11364186a324": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "ADS_002": {
+      "55164b58f56a7cbdff105258511fa2b8f9b58da2a43bab471960f05534eecb35": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "b9f44d62357e4e2ea42ddd1254a76806aa44323d639995af177a29a676e618d5": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "acda86b7148086644a15c6fef2bac11fc916a6234668e9100710641aced033e9": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "8180e1957016eea7b4b094ff64641fda0a1de00687f3cee435e6f37724cbecb5": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "a48cb3ecebf95671ee5b1c6c7ba143ec9e78d7dfcc28aadae92ce1b368086bb0": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "61f8c23a1db78bfcaeab80e66c32847facc1e038f3f21e1f7c1a090f1ade8b65": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "ADS_005": {
+      "8180e1957016eea7b4b094ff64641fda0a1de00687f3cee435e6f37724cbecb5": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "7f826ede444f80e0992302090898505b9cad3236b90c6ffbdbf118e899cb71cc": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "e1c4bdd0e10a18ffc708d08574df6da79db8420601f2aac945feb36ddb64a6d2": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "8399ce3207a5c3661dd39d4d4cbddd116e0e4faa8ffd86338cc817133d133072": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "b9f44d62357e4e2ea42ddd1254a76806aa44323d639995af177a29a676e618d5": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "55164b58f56a7cbdff105258511fa2b8f9b58da2a43bab471960f05534eecb35": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "61f8c23a1db78bfcaeab80e66c32847facc1e038f3f21e1f7c1a090f1ade8b65": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "LIB_001": {
+      "b9117a9b1abfbce434e73a3635feb5ad25095e792d5eb5ed63de1cd6757c896b": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "bc50f4777278b8f6e8c1a5a926ec0009f1364282a489761dcc19b3a9e346b095": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "b7f16cafd7c6c2de3f1d65b90f9c62b71dd41d583663b848b4a8cda554ac4b9c": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "07cb7df10c8be6725ff231731c944ccf3e6bcc220258935fdfabfb5b5ee40420": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "5f302c62ef12a719e2911b6f3ffa507c149de67cfd1bba9776f0415655264e66": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "8a072f911d41ffc109d29664a896f5730c7989a23ce5110ad925dcfd9541d0ce": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "LIB_003": {
+      "939591a6ee3f59296a1cfb84041b1798597041d9f4a4217a440912a26597776c": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "2c7997397facd4d93fcc7e1bf92c06909f6343bfedfb7aa438cb0328cc367296": {
+        "relevance": 0,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "defe9ef2a77d3e128780472ab6cbc50540bfb096f80c4a9d8e32338eb65ca640": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "8c61a5695f0395382d42c4c9a175fc0fd6ce0e1f8ed7a06f62bdbfb1287af49b": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "HMI_001": {
+      "5041dac79a73fe3a57e101731cab93279c4377fe92fafb49736cec6b77293567": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "63792827c21db0d7db72c268bffd28a2d432a47b24e92e66cc1fbcb0c59ba6bf": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "a8525e60418b0fe5a62a6b2ca5ecca3be3502a502cc0495555aeca7f8870d638": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "646c9efe55ba28ae8a75f47767a584e2b2e1314b32bcc0a440d3241662573d85": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "65e19b6aa387efd017c132ae7a24d8a9a20cde0bf1fdace0f8e73d27c33e5465": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "affee40fd019623774b54918c26419b04a70565fe99c7fe028977177c60f3894": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "HMI_003": {
+      "dd9e6dcb28cf9ceb54601509e2fd93f351a1924aa9eda69d838352bd07af4568": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "9ca45768fb7cebdd86d2465718db9d241d2b27b12eeac21328454fcf83ac264b": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "e6b44cc5d92a7c4fd3266aa61b5ab602c7e3a0d2329ff18820f808ed170f2cdd": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "5ff7abc4c300c375056aa84cac4006e6792e47c67b00fe4c55ee3f8f45beb669": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "de695b08d951b8a375f82855653566840a517e070ca97d1b6d8ac5b74b7c0df3": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "d4b67b44bc2ef90e5c5b0e66234a95ab247313aacca0414b35a812b614d2d366": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "SAFE_001": {
+      "44e644105f922beea2f8a123f4a8573887206e6ca2582e876a1ef5ae8dea34e4": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "9a92b8e64a14d3625000de064f659be7f0308c08f35611384c2c74b3c09a4704": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "65c6c824ffd2079260420458fb3e26004c0b118b9e5803433b121db9a84f7005": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "2c910e2c0490a2fa4602013412aa62879dd2a1a014cee955909dc7f5b93d9302": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "326a855f8d5c14c5fdd3eb66fd6c50802b8ea8778270da4255583e991e5edbfc": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "SAFE_003": {
+      "44e644105f922beea2f8a123f4a8573887206e6ca2582e876a1ef5ae8dea34e4": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "d55dfdfbc077ed39ea02e61cb9dc3b99c33f19fa8fa46a78f817c9b0ce877f58": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "f418303659cfb0de4c0e02f11c6261f8631ee2cc246798ded42000ffbc56ceff": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "ba22170d01856eec3646d011a9dc8adec4e63b5203f54c7a37ca4dce4066ab07": {
+        "relevance": 0,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "8c8d8da3dd8d0b2b5c9d901ba5672a1d3ffffa83f5b5d48c88821e89e1db5540": {
+        "relevance": 0,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "TC_002": {
+      "cad5d45ff808a1ce91d8c2b31fd8904ce9960a9eec51ed944202ab23d24ea96e": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "1b3e96d1ba4f9b9d301695929841c3a30968e1cceba396f79d7298e24fadf9f5": {
+        "relevance": 0,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "ffbf94655095500cdcea8838a6ee8541bb5c1a3782f11e63c375c5813b2b276b": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "b5ece260fc33e56d251f20ec387735822fa269c9f67b44ee4e4a7cfebd5d68e0": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "52ada96b2b87feff3652cb992c915ab4e4c4816ac985ed09f02550c3d0f81b40": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "35ef1d7141e9f00d976bb65c7fae182c6b1cf750bf0551e8f7c01ee4e0ca1c68": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "b27f64daa37130c575b3b679b0af0b0265dcc50d90e0e784e7a121a92b1ea88a": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "TC_003": {
+      "285df3bcedbdd95e664360ca4a712fa02c670b01100a9fff4f928e8042beda49": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "086a6039915619230dacb872f9310f8c552010d729747a14d5f8542abb9044ed": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "2f00c37abf99a8f306524c483ed74280a7c1d688d3e19d8a39ac14e7a6e427e9": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "0d368e7eb909cceb13d66df364b54b941891df73db676112d041c82a7222eccc": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "3818c68ec455ebd173adf6b2c36f749c40c1722e694084d96c822619e86acaf6": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "ST_CODE_005": {
+      "29bfa628a83652fcc5016d33c8b91c8885458ac51b492fb2944fee318818c578": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "cdcff4c8a8707cf7bd22d466afc61cc3649b9e2c93e0746b44cc26b4139a7220": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "d97990f3a25ac047bc6a29e45c08710e3485f052b38d437458a2f0735a7097a0": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "51821708d86015774caf2fbe6101bdbd0997325df9be0d647d3fbd16c35101c2": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "fe50b58f733683ea0a4ebd0621487885855b330629c268cc761fd566bd7751c6": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "FB_CODE_001": {
+      "738dab297c87ac9b6416f738acec84939b21e0b99c47f56ab5f135b9c47fd794": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "858c1b59f9db9d46b6fe9d8f5d85419286ddbb70ccdb3e90d3ccd49988a25dcf": {
+        "relevance": 0,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "2cb0b81c3aebef456e4e345a76fad177dbc2a462cb85c00860347e3a5e0f87dc": {
+        "relevance": 0,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "8000a1a4437265a3d4dba91d931cc826f01e6902977081289f648b754e46cea4": {
+        "relevance": 0,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "FB_CODE_002": {
+      "738dab297c87ac9b6416f738acec84939b21e0b99c47f56ab5f135b9c47fd794": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "a055d775eff15e4f3d5108914caf7c111e66b79c3e6a8ab54df6f8fac5aadbe5": {
+        "relevance": 0,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "fcdd2510227e1d290444971133fc363336513238a5c8ab837b8d58a2f7425b99": {
+        "relevance": 0,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "8cd38281a0b08a45fc0d980e3c91537ad954b267ad653b77ab7708ec1d45eec2": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    },
+    "RT_CODE_001": {
+      "eee662bdbc6bf802fb0c31d57a5685ea78c985526868274af3e1d7a65c932d9e": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "6a3ed504491953c90e2d89e281bddd883bfc87ae7706632c4603b31fae523100": {
+        "relevance": 2,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "b0091787d24ae42077b8cd242838d7e16ac615c31dfd3c0443183600b56a92e0": {
+        "relevance": 0,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      },
+      "73689527c3f0aff169a639e7840504d0890e1100fc93b41c8b038427480a0fdf": {
+        "relevance": 1,
+        "evaluador": "Qwen_automatico",
+        "texto_truncado": false
+      }
+    }
+  }
+}

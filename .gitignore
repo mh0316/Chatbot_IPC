@@ -1,0 +1,67 @@
+# ==========================================
+# ENTORNO PYTHON
+# ==========================================
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# ==========================================
+# BASES VECTORIALES Y RESPALDOS
+# ==========================================
+chroma_db/
+chroma_db_backup_*/
+
+# ==========================================
+# MODELOS Y ARCHIVOS BINARIOS
+# ==========================================
+*.gguf
+*.safetensors
+*.pt
+*.pth
+
+# Revisar antes de incluir embeddings
+models/embeddings/
+
+# ==========================================
+# REGISTROS Y DEPURACIÓN
+# ==========================================
+logs/
+*.log
+debug_retrieval.txt
+
+# ==========================================
+# DOCUMENTACIÓN ORIGINAL
+# ==========================================
+documents/raw/
+
+# ==========================================
+# ARCHIVOS TEMPORALES Y RESPALDOS
+# ==========================================
+*.tmp
+*.bak
+*.backup
+*~
+.ipynb_checkpoints/
+
+# ==========================================
+# CREDENCIALES
+# ==========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ==========================================
+# ARCHIVOS DEL SISTEMA
+# ==========================================
+.DS_Store
+Thumbs.db
+
+results/generation/
+
+# Imágenes extraídas de tutoriales
+documents/processed/twincat_tutorial/assets/
+documents/processed/twincat_tutorial/assets_v2/

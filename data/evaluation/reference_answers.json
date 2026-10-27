@@ -1,0 +1,1005 @@
+[
+  {
+    "id": "FUND_001",
+    "expected_points": [
+      "Define un IPC como un computador diseñado para operar en entornos industriales.",
+      "Explica que puede ejecutar funciones de control, supervisión, adquisición o procesamiento de datos.",
+      "Relaciona el IPC con sistemas de automatización y su integración con dispositivos industriales.",
+      "Distingue su propósito industrial del de un computador de uso general."
+    ],
+    "critical_errors": [
+      "Afirmar que un IPC es simplemente un PLC.",
+      "Reducir su función únicamente a una HMI."
+    ]
+  },
+  {
+    "id": "FUND_002",
+    "expected_points": [
+      "Menciona mayor robustez frente a temperatura, vibración, polvo u otras condiciones industriales.",
+      "Reconoce interfaces y conectividad orientadas a automatización industrial.",
+      "Explica diferencias de disponibilidad, confiabilidad o funcionamiento continuo.",
+      "Indica que un IPC suele diseñarse para ciclos de vida y mantenimiento industriales."
+    ],
+    "critical_errors": [
+      "Afirmar que no existe diferencia relevante entre un IPC y un PC convencional.",
+      "Definir la diferencia únicamente por la potencia de procesamiento."
+    ]
+  },
+  {
+    "id": "FUND_003",
+    "expected_points": [
+      "Describe un IPC como computador industrial flexible para control, procesamiento e integración de software.",
+      "Describe un PLC como controlador industrial especializado en control determinista de máquinas y procesos.",
+      "Describe un controlador embebido como sistema computacional integrado y dedicado a una función específica.",
+      "Propone escenarios razonables de uso para cada alternativa.",
+      "Justifica la selección considerando requisitos de control, integración y recursos."
+    ],
+    "critical_errors": [
+      "Tratar IPC, PLC y controlador embebido como equivalentes.",
+      "Asignar escenarios sin una justificación técnica coherente."
+    ]
+  },
+  {
+    "id": "FUND_004",
+    "expected_points": [
+      "Explica que el determinismo implica responder dentro de tiempos previsibles o acotados.",
+      "Relaciona el determinismo con cumplimiento de plazos de control.",
+      "Explica que variaciones temporales pueden degradar estabilidad, sincronización o seguridad del proceso.",
+      "Distingue tiempo de respuesta predecible de simplemente alta velocidad de CPU."
+    ],
+    "critical_errors": [
+      "Definir determinismo como ejecutar siempre lo más rápido posible.",
+      "Afirmar que las variaciones temporales no afectan el control industrial."
+    ]
+  },
+  {
+    "id": "FUND_005",
+    "expected_points": [
+      "Indica que primero se adquieren o actualizan las entradas.",
+      "Explica que luego se ejecuta la lógica de control usando los valores de entrada.",
+      "Indica que posteriormente se actualizan las salidas.",
+      "Reconoce que el ciclo se repite periódicamente.",
+      "Relaciona el orden con el comportamiento cíclico del controlador."
+    ],
+    "critical_errors": [
+      "Invertir el flujo básico de entradas, lógica y salidas sin justificación.",
+      "Describir el proceso como una ejecución única y no cíclica."
+    ]
+  },
+  {
+    "id": "FUND_006",
+    "expected_points": [
+      "Reconoce que visión artificial, bases de datos y procesamiento complejo favorecen el uso de un IPC.",
+      "Reconoce que control de movimiento y E/S en tiempo real requieren comportamiento determinista.",
+      "Justifica una arquitectura IPC o híbrida según criticidad y requisitos.",
+      "Considera integración de comunicaciones, procesamiento y mantenimiento.",
+      "Evita seleccionar una tecnología solo por potencia de cómputo."
+    ],
+    "critical_errors": [
+      "Recomendar un PC de propósito general ignorando requisitos industriales.",
+      "Descartar sin fundamento las necesidades de tiempo real."
+    ]
+  },
+  {
+    "id": "ST_001",
+    "expected_points": [
+      "Identifica Structured Text como un lenguaje textual definido por IEC 61131-3.",
+      "Explica que se utiliza para programar controladores industriales.",
+      "Menciona su utilidad para lógica, cálculos, algoritmos y estructuras de control.",
+      "Reconoce su sintaxis de alto nivel similar a lenguajes estructurados."
+    ],
+    "critical_errors": [
+      "Confundir Structured Text con Ladder Diagram.",
+      "Afirmar que solo sirve para interfaces HMI."
+    ]
+  },
+  {
+    "id": "ST_002",
+    "expected_points": [
+      "Explica IF como selección condicional.",
+      "Explica CASE como selección entre múltiples alternativas según un valor.",
+      "Explica FOR como bucle con cantidad o rango de iteraciones definido.",
+      "Explica WHILE como bucle condicionado que puede ejecutar un número indeterminado de iteraciones.",
+      "Advierte que los bucles deben utilizarse considerando el tiempo de ciclo."
+    ],
+    "critical_errors": [
+      "Confundir las funciones de IF, CASE, FOR y WHILE.",
+      "Indicar que WHILE siempre ejecuta un número fijo de iteraciones."
+    ]
+  },
+  {
+    "id": "ST_003",
+    "expected_points": [
+      "Presenta sintaxis válida o conceptualmente válida de Structured Text.",
+      "Start permite activar Motor.",
+      "Stop permite desactivar Motor.",
+      "La lógica establece una prioridad razonable para Stop.",
+      "Cumple el comportamiento solicitado sin condiciones contradictorias."
+    ],
+    "critical_errors": [
+      "Stop activa el motor.",
+      "La salida no puede desactivarse una vez activada."
+    ]
+  },
+  {
+    "id": "ST_004",
+    "expected_points": [
+      "Implementa una lógica de enclavamiento o memoria de marcha.",
+      "Start permite iniciar la marcha.",
+      "Stop desactiva la marcha.",
+      "EmergencyStop fuerza una condición segura o desactiva la salida.",
+      "La parada de emergencia tiene prioridad sobre Start."
+    ],
+    "critical_errors": [
+      "Permitir que Start anule EmergencyStop.",
+      "Mantener el motor activado durante una parada de emergencia."
+    ]
+  },
+  {
+    "id": "ST_005",
+    "expected_points": [
+      "Explica que el programa se ejecuta cíclicamente.",
+      "Distingue variables persistentes de variables temporales según su declaración y contexto.",
+      "Reconoce que el valor de variables normales puede conservarse entre ciclos mientras el runtime siga activo.",
+      "Explica que las asignaciones de cada ciclo pueden modificar ese estado."
+    ],
+    "critical_errors": [
+      "Afirmar que todas las variables se reinician automáticamente en cada ciclo.",
+      "Afirmar que todas las variables son necesariamente persistentes tras reinicio del sistema."
+    ]
+  },
+  {
+    "id": "ST_006",
+    "expected_points": [
+      "Detecta una transición FALSE a TRUE y no solo un nivel TRUE.",
+      "Utiliza una variable de estado anterior o un bloque de detección de flanco como R_TRIG.",
+      "Incrementa el contador una sola vez por flanco positivo.",
+      "Reset pone el contador en cero.",
+      "El estado necesario para detectar el flanco se conserva entre ciclos."
+    ],
+    "critical_errors": [
+      "Incrementar el contador en cada ciclo mientras la entrada permanezca TRUE.",
+      "Reinicializar el estado anterior en cada ciclo."
+    ]
+  },
+  {
+    "id": "ST_007",
+    "expected_points": [
+      "Identifica que un WHILE sin cambio en su condición puede transformarse en un bucle infinito.",
+      "Explica que la tarea puede no completar su ciclo.",
+      "Relaciona el problema con incumplimiento de deadlines o bloqueo de ejecución.",
+      "Reconoce posibles efectos sobre otras tareas o el comportamiento en tiempo real."
+    ],
+    "critical_errors": [
+      "Afirmar que el runtime interrumpe siempre automáticamente el WHILE sin consecuencias.",
+      "Considerar el problema solo como un error de sintaxis."
+    ]
+  },
+  {
+    "id": "ST_008",
+    "expected_points": [
+      "Utiliza CASE para seleccionar entre IDLE, RUNNING y ERROR.",
+      "Define o representa claramente los tres estados.",
+      "Incluye transiciones coherentes entre estados.",
+      "Mantiene una variable de estado entre ciclos.",
+      "Evita transiciones contradictorias en un mismo ciclo."
+    ],
+    "critical_errors": [
+      "No utilizar una lógica equivalente a máquina de estados.",
+      "Omitir alguno de los estados requeridos."
+    ]
+  },
+  {
+    "id": "ST_009",
+    "expected_points": [
+      "Reconoce que Structured Text es adecuado para algoritmos, cálculos y lógica compleja.",
+      "Reconoce que Ladder puede ser más intuitivo para lógica booleana y personal de mantenimiento familiarizado con esquemas eléctricos.",
+      "Compara legibilidad y mantenibilidad según el tipo de problema.",
+      "Explica que ambos pueden implementar lógica secuencial pero con distintas ventajas.",
+      "Evita presentar uno como universalmente superior."
+    ],
+    "critical_errors": [
+      "Afirmar que Ladder no puede implementar lógica secuencial.",
+      "Afirmar que Structured Text no es un lenguaje IEC 61131-3."
+    ]
+  },
+  {
+    "id": "ST_010",
+    "expected_points": [
+      "Revisa la condición de Stop y su prioridad lógica.",
+      "Busca enclavamientos o asignaciones posteriores que vuelvan a activar Motor.",
+      "Revisa si múltiples partes del programa escriben sobre la misma salida.",
+      "Utiliza monitorización online para observar Start, Stop y Motor.",
+      "Propone corregir la lógica una vez identificada la causa."
+    ],
+    "critical_errors": [
+      "Asumir que el problema es necesariamente hardware sin revisar la lógica.",
+      "Ignorar posibles escrituras múltiples sobre la salida."
+    ]
+  },
+  {
+    "id": "FB_001",
+    "expected_points": [
+      "Define FUNCTION_BLOCK como una POU de IEC 61131-3.",
+      "Explica que puede poseer entradas, salidas y variables internas.",
+      "Reconoce que una instancia puede conservar estado interno entre ejecuciones.",
+      "Indica que se pueden crear múltiples instancias del mismo tipo."
+    ],
+    "critical_errors": [
+      "Afirmar que un Function Block no conserva estado.",
+      "Confundirlo con una función puramente sin estado."
+    ]
+  },
+  {
+    "id": "FB_002",
+    "expected_points": [
+      "Explica que una FUNCTION normalmente calcula un resultado sin estado persistente por instancia.",
+      "Explica que un FUNCTION_BLOCK posee instancias con estado interno.",
+      "Reconoce que un Function Block puede tener múltiples salidas y memoria interna.",
+      "Relaciona la elección con la necesidad de mantener estado."
+    ],
+    "critical_errors": [
+      "Afirmar que FUNCTION y FUNCTION_BLOCK son equivalentes.",
+      "Afirmar que una FUNCTION_BLOCK no requiere instancia."
+    ]
+  },
+  {
+    "id": "FB_003",
+    "expected_points": [
+      "Explica que cada instancia posee su propio almacenamiento de variables internas.",
+      "Indica que las ejecuciones de una instancia no deben compartir automáticamente el estado de otra.",
+      "Relaciona esto con reutilización del mismo tipo de bloque para varios equipos.",
+      "Reconoce que usar una misma instancia para dos equipos sí produciría estado compartido."
+    ],
+    "critical_errors": [
+      "Afirmar que todas las instancias comparten necesariamente las variables internas."
+    ]
+  },
+  {
+    "id": "FB_004",
+    "expected_points": [
+      "Define entradas Start, Stop y EmergencyStop y salida Running.",
+      "Implementa memoria de marcha o lógica equivalente.",
+      "Stop desactiva Running.",
+      "EmergencyStop fuerza Running a FALSE con prioridad.",
+      "La lógica es reutilizable como instancia de Function Block."
+    ],
+    "critical_errors": [
+      "EmergencyStop no tiene prioridad.",
+      "Running puede permanecer TRUE durante EmergencyStop."
+    ]
+  },
+  {
+    "id": "FB_005",
+    "expected_points": [
+      "Compara la variable analógica con un límite.",
+      "Utiliza un TON o mecanismo temporal equivalente.",
+      "El temporizador se activa mientras la condición sobre el límite permanezca verdadera.",
+      "La alarma se activa solo después de cinco segundos continuos.",
+      "Al desaparecer la condición antes del tiempo, el temporizador o alarma se reinicia según la lógica propuesta."
+    ],
+    "critical_errors": [
+      "Activar la alarma inmediatamente sin temporización.",
+      "No exigir permanencia continua sobre el límite."
+    ]
+  },
+  {
+    "id": "FB_006",
+    "expected_points": [
+      "Recomienda encapsular lógica cuando existe comportamiento reutilizable o con estado propio.",
+      "Relaciona Function Blocks con modularidad y separación de responsabilidades.",
+      "Menciona facilidad de prueba, mantenimiento y reutilización.",
+      "Reconoce que lógica trivial y exclusiva puede permanecer en el programa principal."
+    ],
+    "critical_errors": [
+      "Afirmar que toda lógica debe obligatoriamente implementarse como Function Block."
+    ]
+  },
+  {
+    "id": "FB_007",
+    "expected_points": [
+      "Identifica como causa probable el uso accidental de una misma instancia para ambos motores.",
+      "Explica que la instancia comparte variables internas y estado.",
+      "Propone declarar una instancia independiente por motor.",
+      "Reconoce que el tipo de Function Block puede ser el mismo aunque las instancias sean distintas."
+    ],
+    "critical_errors": [
+      "Proponer duplicar el código del Function Block como única solución.",
+      "Afirmar que dos instancias independientes comparten necesariamente estado."
+    ]
+  },
+  {
+    "id": "RT_001",
+    "expected_points": [
+      "Explica que una tarea cíclica se ejecuta repetidamente.",
+      "Indica que posee un período o intervalo de activación configurado.",
+      "Relaciona la ejecución con el procesamiento periódico de lógica de control.",
+      "Reconoce que el tiempo de ejecución debe ser compatible con el período."
+    ],
+    "critical_errors": [
+      "Definir una tarea cíclica como una tarea que se ejecuta una sola vez."
+    ]
+  },
+  {
+    "id": "RT_002",
+    "expected_points": [
+      "Define el tiempo de ciclo configurado como el período entre activaciones de la tarea.",
+      "Define el tiempo de ejecución como el tiempo que tarda el código en completar una activación.",
+      "Explica que ambos valores no son necesariamente iguales.",
+      "Reconoce que el tiempo de ejecución debe mantenerse suficientemente por debajo del período para dejar margen."
+    ],
+    "critical_errors": [
+      "Afirmar que período y tiempo de ejecución siempre son idénticos."
+    ]
+  },
+  {
+    "id": "RT_003",
+    "expected_points": [
+      "Identifica un incumplimiento del requisito temporal o deadline.",
+      "Explica que la siguiente activación puede retrasarse o verse afectada.",
+      "Menciona jitter, sobrecarga o degradación del determinismo.",
+      "Reconoce posible impacto sobre otras tareas y el proceso."
+    ],
+    "critical_errors": [
+      "Afirmar que no ocurre nada mientras el código termine eventualmente."
+    ]
+  },
+  {
+    "id": "RT_004",
+    "expected_points": [
+      "Declara o utiliza una instancia TON.",
+      "Conecta la señal de entrada a IN.",
+      "Configura PT en cinco segundos.",
+      "Activa la salida utilizando Q del temporizador.",
+      "Explica que Q se activa si IN permanece TRUE durante PT."
+    ],
+    "critical_errors": [
+      "Confundir TON con un temporizador de apagado TOF.",
+      "Activar la salida inmediatamente sin respetar los cinco segundos."
+    ]
+  },
+  {
+    "id": "RT_005",
+    "expected_points": [
+      "Explica TON como retardo a la conexión.",
+      "Explica TOF como retardo a la desconexión.",
+      "Explica TP como generación de un pulso temporizado.",
+      "Entrega un ejemplo industrial coherente para cada temporizador.",
+      "Distingue correctamente el comportamiento temporal de los tres."
+    ],
+    "critical_errors": [
+      "Intercambiar las funciones de TON y TOF.",
+      "Describir TP como un temporizador que permanece activo mientras IN sea TRUE sin duración definida."
+    ]
+  },
+  {
+    "id": "RT_006",
+    "expected_points": [
+      "Identifica que 1.5 ms supera el período configurado de 1 ms.",
+      "Explica que la tarea no cumple su deadline.",
+      "Menciona retrasos, jitter o pérdida de determinismo.",
+      "Reconoce posible impacto sobre otras tareas.",
+      "Propone optimizar la carga, dividir el trabajo o ajustar el período si los requisitos lo permiten."
+    ],
+    "critical_errors": [
+      "Afirmar que 1.5 ms dentro de una tarea de 1 ms es aceptable sin consecuencias.",
+      "Confundir el problema con la frecuencia del procesador."
+    ]
+  },
+  {
+    "id": "RT_007",
+    "expected_points": [
+      "Relaciona el período de 1 ms con requisitos rápidos de control de movimiento.",
+      "Relaciona 100 ms con supervisión menos crítica temporalmente.",
+      "Explica que períodos distintos permiten asignar recursos según criticidad.",
+      "Reconoce que ejecutar todo a 1 ms aumentaría carga innecesariamente."
+    ],
+    "critical_errors": [
+      "Afirmar que todas las tareas deben tener el mismo período."
+    ]
+  },
+  {
+    "id": "RT_008",
+    "expected_points": [
+      "Revisa tiempos de ejecución reales y máximos de las tareas.",
+      "Revisa períodos, prioridades y posibles overruns.",
+      "Analiza carga de CPU y tareas de alta prioridad.",
+      "Considera operaciones bloqueantes, comunicaciones o bucles largos.",
+      "Relaciona el diagnóstico con jitter y determinismo."
+    ],
+    "critical_errors": [
+      "Limitar el diagnóstico únicamente al hardware de E/S."
+    ]
+  },
+  {
+    "id": "ECAT_001",
+    "expected_points": [
+      "Define EtherCAT como una red o protocolo Ethernet industrial de alto rendimiento.",
+      "Explica que conecta el controlador con dispositivos de campo.",
+      "Relaciona EtherCAT con intercambio cíclico de datos de E/S.",
+      "Menciona su uso en aplicaciones de control y movimiento con requisitos temporales estrictos."
+    ],
+    "critical_errors": [
+      "Definir EtherCAT como un protocolo de base de datos.",
+      "Confundir EtherCAT con ADS."
+    ]
+  },
+  {
+    "id": "ECAT_002",
+    "expected_points": [
+      "Explica que el Master inicia y coordina la comunicación EtherCAT.",
+      "Indica que los esclavos representan dispositivos de campo que intercambian datos con el Master.",
+      "Relaciona el Master con configuración y procesamiento de datos cíclicos.",
+      "Reconoce que los esclavos pueden incluir módulos de E/S, drives u otros dispositivos."
+    ],
+    "critical_errors": [
+      "Afirmar que los esclavos controlan normalmente al Master."
+    ]
+  },
+  {
+    "id": "ECAT_003",
+    "expected_points": [
+      "Explica que las variables del programa representan datos utilizados por la lógica PLC.",
+      "Explica que los canales físicos corresponden a señales de módulos de E/S.",
+      "Describe que debe existir un vínculo o mapeo entre variable y canal.",
+      "Reconoce que el runtime actualiza los datos de proceso de acuerdo con ese mapeo."
+    ],
+    "critical_errors": [
+      "Afirmar que declarar una variable crea automáticamente una conexión física sin configuración."
+    ]
+  },
+  {
+    "id": "ECAT_004",
+    "expected_points": [
+      "Declara o identifica una variable BOOL en el programa PLC.",
+      "Localiza el canal de entrada digital del dispositivo EtherCAT en la configuración de I/O.",
+      "Vincula o enlaza el canal físico con la variable PLC.",
+      "Activa o aplica la configuración cuando corresponda.",
+      "Verifica online que la variable refleje el estado de la entrada."
+    ],
+    "critical_errors": [
+      "Confundir el vínculo EtherCAT con una comunicación ADS externa.",
+      "Afirmar que basta con nombrar igual la variable y el canal."
+    ]
+  },
+  {
+    "id": "ECAT_005",
+    "expected_points": [
+      "Revisa estados EtherCAT y diagnósticos del dispositivo.",
+      "Comprueba configuración, identidad y orden de dispositivos.",
+      "Revisa cableado, alimentación y conexión física.",
+      "Comprueba errores de sincronización o parámetros del esclavo.",
+      "Utiliza información de diagnóstico de TwinCAT para localizar la causa."
+    ],
+    "critical_errors": [
+      "Asumir que detección del dispositivo garantiza automáticamente estado operacional."
+    ]
+  },
+  {
+    "id": "ECAT_006",
+    "expected_points": [
+      "Revisa que el canal físico correcto esté vinculado a la variable.",
+      "Comprueba el estado EtherCAT y el módulo de E/S.",
+      "Revisa que la configuración activa corresponda con el hardware actual.",
+      "Verifica posibles inversiones, direccionamiento o asignaciones incorrectas.",
+      "Usa monitorización online tanto del canal como de la variable."
+    ],
+    "critical_errors": [
+      "Concluir que la variable BOOL está dañada sin revisar configuración y vínculo."
+    ]
+  },
+  {
+    "id": "ECAT_007",
+    "expected_points": [
+      "Relaciona múltiples ejes con necesidad de coordinación temporal precisa.",
+      "Explica que diferencias temporales pueden producir errores de sincronización de movimiento.",
+      "Menciona mecanismos de sincronización como relojes distribuidos cuando corresponda.",
+      "Relaciona sincronización con determinismo, precisión y calidad de movimiento."
+    ],
+    "critical_errors": [
+      "Afirmar que la sincronización no importa mientras los mensajes lleguen eventualmente."
+    ]
+  },
+  {
+    "id": "ECAT_008",
+    "expected_points": [
+      "Propone agrupar variables por módulo, función o equipo.",
+      "Utiliza nombres descriptivos y una convención consistente.",
+      "Separa representación física de E/S de la lógica de control cuando sea conveniente.",
+      "Considera estructuras, GVL u otros mecanismos organizativos.",
+      "Prioriza mantenibilidad y trazabilidad del vínculo con hardware."
+    ],
+    "critical_errors": [
+      "Recomendar variables sin nomenclatura ni organización para todos los canales."
+    ]
+  },
+  {
+    "id": "ADS_001",
+    "expected_points": [
+      "Identifica ADS como mecanismo o protocolo de comunicación del ecosistema TwinCAT.",
+      "Explica que permite comunicación entre runtimes, aplicaciones y dispositivos TwinCAT.",
+      "Relaciona ADS con lectura, escritura o acceso a variables y servicios.",
+      "Distingue ADS de EtherCAT."
+    ],
+    "critical_errors": [
+      "Definir ADS como bus físico de E/S EtherCAT."
+    ]
+  },
+  {
+    "id": "ADS_002",
+    "expected_points": [
+      "Menciona lectura de variables PLC.",
+      "Menciona escritura de variables cuando esté permitido.",
+      "Relaciona ADS con intercambio de datos entre una aplicación externa y TwinCAT.",
+      "Reconoce usos como supervisión, diagnóstico, adquisición o integración."
+    ],
+    "critical_errors": [
+      "Afirmar que ADS solo funciona dentro del mismo programa PLC."
+    ]
+  },
+  {
+    "id": "ADS_003",
+    "expected_points": [
+      "Establece conceptualmente una conexión con el destino TwinCAT.",
+      "Identifica el runtime o puerto ADS correspondiente.",
+      "Identifica la variable PLC por símbolo o mecanismo equivalente.",
+      "Realiza una operación de lectura.",
+      "Considera que la ruta o conectividad ADS debe estar configurada."
+    ],
+    "critical_errors": [
+      "Confundir la lectura ADS con acceso directo al canal EtherCAT.",
+      "Omitir completamente la identificación del destino o runtime."
+    ]
+  },
+  {
+    "id": "ADS_004",
+    "expected_points": [
+      "Revisa AMS Net ID, ruta ADS y conectividad.",
+      "Revisa el puerto o runtime PLC al que se intenta acceder.",
+      "Comprueba nombre, existencia y accesibilidad de la variable.",
+      "Revisa estado del PLC y configuración de símbolos.",
+      "Considera permisos, firewall o configuración de comunicación cuando corresponda."
+    ],
+    "critical_errors": [
+      "Asumir que alcanzar el IPC por red garantiza acceso ADS a variables."
+    ]
+  },
+  {
+    "id": "ADS_005",
+    "expected_points": [
+      "Explica que ADS es un mecanismo de comunicación entre software/runtimes y variables o servicios.",
+      "Explica que las señales de I/O representan interacción con dispositivos físicos.",
+      "Distingue comunicación lógica de acceso a hardware de campo.",
+      "Reconoce que ADS puede observar o modificar variables que a su vez estén relacionadas con I/O, pero no sustituye el mapeo de I/O."
+    ],
+    "critical_errors": [
+      "Tratar ADS y acceso físico de I/O como el mismo mecanismo."
+    ]
+  },
+  {
+    "id": "LIB_001",
+    "expected_points": [
+      "Explica que las librerías agrupan funcionalidades reutilizables.",
+      "Menciona bloques, funciones, tipos u otros elementos reutilizables.",
+      "Relaciona su uso con modularidad y reducción de duplicación.",
+      "Reconoce gestión de dependencias y versiones."
+    ],
+    "critical_errors": [
+      "Definir una librería como un archivo de variables online exclusivamente."
+    ]
+  },
+  {
+    "id": "LIB_002",
+    "expected_points": [
+      "Relaciona reutilización con reducción de duplicación de código.",
+      "Menciona consistencia entre máquinas o módulos.",
+      "Explica beneficios para mantenimiento, pruebas y corrección de errores.",
+      "Reconoce que la modularidad facilita crecimiento y trabajo en proyectos grandes."
+    ],
+    "critical_errors": [
+      "Afirmar que reutilización siempre aumenta la duplicación."
+    ]
+  },
+  {
+    "id": "LIB_003",
+    "expected_points": [
+      "Menciona incompatibilidades de API o comportamiento entre versiones.",
+      "Reconoce posibles errores de compilación o ejecución.",
+      "Considera cambios en tipos, funciones o bloques.",
+      "Recomienda controlar y documentar versiones de dependencias.",
+      "Sugiere validar cambios antes de actualizar en producción."
+    ],
+    "critical_errors": [
+      "Afirmar que la versión de una librería nunca afecta al proyecto."
+    ]
+  },
+  {
+    "id": "LIB_004",
+    "expected_points": [
+      "Propone una interfaz común para comportamientos compartidos.",
+      "Utiliza Function Blocks reutilizables o composición de bloques.",
+      "Separa comportamiento común de particularidades de cada tipo de motor.",
+      "Evita duplicación innecesaria.",
+      "Considera parametrización y organización en librerías."
+    ],
+    "critical_errors": [
+      "Recomendar copiar y pegar toda la lógica para cada motor como diseño principal."
+    ]
+  },
+  {
+    "id": "HMI_001",
+    "expected_points": [
+      "Define HMI como interfaz entre operador y proceso o máquina.",
+      "Menciona visualización de estados y variables.",
+      "Menciona comandos u operaciones del usuario cuando estén permitidos.",
+      "Relaciona HMI con alarmas, diagnóstico y supervisión."
+    ],
+    "critical_errors": [
+      "Definir HMI como controlador físico de E/S exclusivamente."
+    ]
+  },
+  {
+    "id": "HMI_002",
+    "expected_points": [
+      "Incluye estado de marcha/parada del motor.",
+      "Incluye alarmas o fallos relevantes.",
+      "Considera variables operativas útiles como velocidad, corriente o consigna cuando existan.",
+      "Incluye estados de permisos o interlocks relevantes.",
+      "Justifica las variables en función de supervisión y diagnóstico."
+    ],
+    "critical_errors": [
+      "Mostrar únicamente comandos sin ninguna realimentación de estado."
+    ]
+  },
+  {
+    "id": "HMI_003",
+    "expected_points": [
+      "Propone una indicación visual clara y diferenciada.",
+      "Incluye texto o descripción inequívoca de la alarma.",
+      "Evita depender exclusivamente del color.",
+      "Considera prioridad, reconocimiento y persistencia de la alarma según corresponda.",
+      "Busca que el operador comprenda la acción o riesgo asociado."
+    ],
+    "critical_errors": [
+      "Recomendar una alarma crítica basada solo en un cambio sutil de color sin texto o contexto."
+    ]
+  },
+  {
+    "id": "HMI_004",
+    "expected_points": [
+      "Revisa el vínculo entre variable PLC y elemento HMI.",
+      "Comprueba comunicaciones y estado del runtime.",
+      "Verifica nombre, símbolo o ruta de la variable.",
+      "Revisa frecuencia de actualización o suscripción.",
+      "Compara valor online en PLC con el mostrado en HMI."
+    ],
+    "critical_errors": [
+      "Asumir automáticamente que el PLC está mal si la variable online cambia correctamente."
+    ]
+  },
+  {
+    "id": "SAFE_001",
+    "expected_points": [
+      "Explica que una parada de emergencia es una función de seguridad.",
+      "Reconoce que software estándar puede fallar o quedar bloqueado.",
+      "Indica que deben emplearse mecanismos o componentes de seguridad adecuados al nivel de riesgo.",
+      "Relaciona el diseño con comportamiento seguro ante fallos.",
+      "Evita presentar una variable booleana estándar como única medida de seguridad."
+    ],
+    "critical_errors": [
+      "Afirmar que una parada de emergencia implementada solo con software estándar es siempre suficiente.",
+      "Sugerir puentear dispositivos de seguridad para simplificar el control."
+    ]
+  },
+  {
+    "id": "SAFE_002",
+    "expected_points": [
+      "Describe una parada normal como parte del funcionamiento operativo previsto.",
+      "Describe una condición de seguridad como respuesta destinada a reducir riesgo ante una situación peligrosa.",
+      "Reconoce diferencias en prioridad, arquitectura y requisitos de validación.",
+      "Explica que una función de seguridad no debe tratarse simplemente como una orden normal de proceso."
+    ],
+    "critical_errors": [
+      "Tratar parada normal y condición de seguridad como equivalentes."
+    ]
+  },
+  {
+    "id": "SAFE_003",
+    "expected_points": [
+      "Rechaza ignorar o puentear una señal de seguridad durante pruebas normales.",
+      "Explica el riesgo de movimiento o energía peligrosa no controlada.",
+      "Reconoce que se deben usar procedimientos de prueba seguros y autorizados.",
+      "Propone simulación, entorno de pruebas, modo seguro u otra alternativa controlada.",
+      "Mantiene las funciones de seguridad efectivas según el procedimiento aplicable."
+    ],
+    "critical_errors": [
+      "Recomendar deshabilitar temporalmente la seguridad sin controles adicionales.",
+      "Minimizar el riesgo porque la prueba sea de corta duración."
+    ]
+  },
+  {
+    "id": "TC_001",
+    "expected_points": [
+      "Define TwinCAT 3 como plataforma de automatización de Beckhoff.",
+      "Explica que permite ejecutar funciones de PLC y control en un PC/IPC.",
+      "Relaciona TwinCAT 3 con ingeniería, configuración y runtime de automatización.",
+      "Menciona aplicaciones como PLC, movimiento, I/O o comunicaciones."
+    ],
+    "critical_errors": [
+      "Definir TwinCAT 3 únicamente como un lenguaje de programación."
+    ]
+  },
+  {
+    "id": "TC_002",
+    "expected_points": [
+      "Define POU como Program Organization Unit.",
+      "Identifica PROGRAM, FUNCTION_BLOCK y FUNCTION como tipos principales.",
+      "Explica brevemente el propósito de estos tipos.",
+      "Relaciona las POU con la organización del código PLC."
+    ],
+    "critical_errors": [
+      "Confundir POU con un dispositivo físico EtherCAT."
+    ]
+  },
+  {
+    "id": "TC_003",
+    "expected_points": [
+      "Crea o abre una solución/proyecto TwinCAT.",
+      "Agrega un proyecto PLC.",
+      "Selecciona o configura el runtime/arquitectura correspondiente.",
+      "Crea o utiliza POUs y variables necesarias.",
+      "Compila y posteriormente descarga/activa según corresponda para ejecutar."
+    ],
+    "critical_errors": [
+      "Confundir creación del proyecto PLC con escaneo de dispositivos EtherCAT únicamente."
+    ]
+  },
+  {
+    "id": "TC_004",
+    "expected_points": [
+      "Crea o configura una tarea en la configuración PLC.",
+      "Define un tiempo de ciclo apropiado.",
+      "Asocia una instancia de PROGRAM a la tarea.",
+      "Compila y aplica la configuración antes de ejecución.",
+      "Reconoce que la tarea determina cuándo se ejecuta el programa asociado."
+    ],
+    "critical_errors": [
+      "Afirmar que una POU se ejecuta cíclicamente sin estar asociada directa o indirectamente a una tarea."
+    ]
+  },
+  {
+    "id": "TC_005",
+    "expected_points": [
+      "Explica que compilar verifica/traduce el proyecto y detecta errores de construcción.",
+      "Explica que activar configuración aplica la configuración del sistema al runtime.",
+      "Explica que poner en ejecución inicia o habilita la ejecución del runtime/PLC.",
+      "Distingue claramente las tres acciones."
+    ],
+    "critical_errors": [
+      "Tratar compilar, activar configuración y ejecutar como la misma operación."
+    ]
+  },
+  {
+    "id": "TC_006",
+    "expected_points": [
+      "Comprueba que el PLC/runtime esté en estado de ejecución.",
+      "Revisa que el programa esté asociado a una tarea activa.",
+      "Comprueba descarga/activación de la versión correcta.",
+      "Revisa estado de la tarea y posibles errores.",
+      "Utiliza monitorización online para verificar que el código realmente se ejecute."
+    ],
+    "critical_errors": [
+      "Concluir que compilar correctamente garantiza que el programa esté ejecutándose."
+    ]
+  },
+  {
+    "id": "TC_007",
+    "expected_points": [
+      "Comprueba que la nueva configuración de hardware esté activa.",
+      "Revisa estado de los dispositivos EtherCAT y módulos de E/S.",
+      "Verifica vínculos entre canales físicos y variables PLC.",
+      "Comprueba cambios de orden, dirección o identidad de módulos.",
+      "Utiliza monitorización online para aislar si el fallo está en canal, mapeo o lógica."
+    ],
+    "critical_errors": [
+      "Modificar el código de control antes de revisar la configuración y vínculos alterados."
+    ]
+  },
+  {
+    "id": "TC_008",
+    "expected_points": [
+      "Observa online la variable de estado de la secuencia.",
+      "Monitorea condiciones de transición y señales relevantes.",
+      "Sigue el cambio de estados ciclo a ciclo o mediante trazas cuando proceda.",
+      "Compara valores reales con las condiciones esperadas.",
+      "Evita forzar variables sin considerar efectos sobre máquina o seguridad."
+    ],
+    "critical_errors": [
+      "Recomendar forzar señales de seguridad como método normal de depuración."
+    ]
+  },
+  {
+    "id": "TC_009",
+    "expected_points": [
+      "Separa control de motores en módulos o Function Blocks reutilizables.",
+      "Separa gestión de alarmas de la lógica específica de cada equipo.",
+      "Organiza comunicaciones industriales en componentes dedicados.",
+      "Incluye una capa o variables adecuadas para supervisión/HMI.",
+      "Usa una estructura clara de programas, FB, GVL, tipos y librerías según necesidad."
+    ],
+    "critical_errors": [
+      "Concentrar toda la lógica de la máquina en un único bloque monolítico sin justificación."
+    ]
+  },
+  {
+    "id": "ST_CODE_001",
+    "expected_points": [
+      "Declara o utiliza una instancia TON.",
+      "Asigna la entrada a IN del TON.",
+      "Configura PT en T#3s o valor equivalente de tres segundos.",
+      "Asigna la salida a Q del temporizador.",
+      "La salida solo se activa si la entrada permanece TRUE durante el tiempo requerido."
+    ],
+    "critical_errors": [
+      "Activar la salida inmediatamente al detectar TRUE.",
+      "Recrear o reinicializar el temporizador de forma que no acumule tiempo entre ciclos."
+    ]
+  },
+  {
+    "id": "ST_CODE_002",
+    "expected_points": [
+      "Explica que la asignación se evalúa en cada ciclo.",
+      "Motor será TRUE solo cuando Start sea TRUE y Stop sea FALSE.",
+      "Si Stop es TRUE, Motor será FALSE.",
+      "Si Start vuelve a FALSE, Motor también vuelve a FALSE.",
+      "Reconoce que esta expresión no implementa enclavamiento."
+    ],
+    "critical_errors": [
+      "Afirmar que Motor queda enclavado después de un pulso de Start.",
+      "Afirmar que Stop debe ser TRUE para que Motor se active."
+    ]
+  },
+  {
+    "id": "ST_CODE_003",
+    "expected_points": [
+      "Identifica que comprobar solo Input=TRUE detecta nivel y no flanco.",
+      "Explica que el código se ejecuta repetidamente en cada ciclo PLC.",
+      "Utiliza R_TRIG o compara el estado actual con un estado anterior.",
+      "Incrementa exactamente una vez por transición FALSE a TRUE.",
+      "Conserva correctamente el estado anterior entre ciclos."
+    ],
+    "critical_errors": [
+      "Incrementar mientras Input permanezca TRUE.",
+      "Reinicializar la memoria del estado anterior en cada ciclo.",
+      "Confundir flanco positivo con TRUE a FALSE."
+    ]
+  },
+  {
+    "id": "ST_CODE_004",
+    "expected_points": [
+      "Define IDLE, STARTING, RUNNING, STOPPING y ERROR.",
+      "Utiliza CASE sobre una variable de estado.",
+      "Incluye una transición razonable IDLE a STARTING y STARTING a RUNNING.",
+      "Incluye una transición RUNNING a STOPPING y STOPPING a IDLE.",
+      "Permite entrar a ERROR ante una condición de fallo y define una recuperación controlada.",
+      "Evita múltiples estados activos simultáneamente."
+    ],
+    "critical_errors": [
+      "Omitir alguno de los cinco estados requeridos.",
+      "Implementar estados sin ninguna lógica de transición."
+    ]
+  },
+  {
+    "id": "ST_CODE_005",
+    "expected_points": [
+      "Explica que TON necesita conservar su estado interno entre ciclos.",
+      "Declara la instancia TON en una sección de variables persistente para la POU o FB correspondiente.",
+      "Evita crear/reinicializar la instancia como dato temporal en cada ejecución.",
+      "Muestra una llamada TON con IN y PT.",
+      "Utiliza Q y, si corresponde, ET de la misma instancia."
+    ],
+    "critical_errors": [
+      "Afirmar que un TON no conserva estado interno.",
+      "Crear una nueva instancia efectiva en cada ciclo y esperar que acumule tiempo."
+    ]
+  },
+  {
+    "id": "FB_CODE_001",
+    "expected_points": [
+      "Define FB_Motor con entradas Start, Stop y EmergencyStop.",
+      "Define salidas Running y Fault.",
+      "Implementa lógica de marcha/parada con estado interno o equivalente.",
+      "EmergencyStop tiene prioridad y desactiva Running.",
+      "Fault representa coherentemente una condición de fallo o emergencia y se explica su criterio."
+    ],
+    "critical_errors": [
+      "Permitir Running=TRUE durante EmergencyStop.",
+      "Usar variables globales compartidas como único estado del bloque sin justificación."
+    ]
+  },
+  {
+    "id": "FB_CODE_002",
+    "expected_points": [
+      "Identifica que la misma instancia implica compartir estado interno.",
+      "Explica cómo llamadas para motores distintos pueden sobrescribir o influir en el mismo estado.",
+      "Declara dos instancias independientes del mismo tipo de Function Block.",
+      "Asocia una instancia a cada motor."
+    ],
+    "critical_errors": [
+      "Afirmar que reutilizar la misma instancia mantiene estados independientes.",
+      "Proponer duplicar el tipo de Function Block en lugar de crear instancias separadas."
+    ]
+  },
+  {
+    "id": "RT_CODE_001",
+    "expected_points": [
+      "Reconoce que 100000 iteraciones pueden exceder el presupuesto temporal de una tarea de 1 ms.",
+      "Menciona deadline miss, jitter o pérdida de determinismo.",
+      "Reconoce posible impacto sobre otras tareas.",
+      "Propone medir u optimizar el tiempo de ejecución.",
+      "Propone dividir el trabajo entre ciclos, moverlo a una tarea menos frecuente o usar otra estrategia apropiada."
+    ],
+    "critical_errors": [
+      "Afirmar que un FOR de 100000 iteraciones es seguro por definición.",
+      "Evaluar el problema solo por la sintaxis del FOR."
+    ]
+  },
+  {
+    "id": "ECAT_CODE_001",
+    "expected_points": [
+      "Declara una variable BOOL válida en Structured Text.",
+      "Explica que la declaración por sí sola no establece el vínculo físico.",
+      "Localiza el canal de entrada digital en la configuración EtherCAT/TwinCAT.",
+      "Vincula la variable PLC con el canal físico correspondiente.",
+      "Aplica la configuración y verifica online la actualización."
+    ],
+    "critical_errors": [
+      "Afirmar que el nombre de la variable crea automáticamente el vínculo EtherCAT.",
+      "Confundir el vínculo de I/O con una conexión ADS."
+    ]
+  },
+  {
+    "id": "ADS_CODE_001",
+    "expected_points": [
+      "Muestra un cliente o conexión ADS hacia el sistema TwinCAT.",
+      "Identifica el AMS Net ID o destino equivalente y el puerto/runtime PLC.",
+      "Identifica la variable PLC por nombre simbólico o handle.",
+      "Realiza una operación de lectura coherente.",
+      "Menciona ruta ADS, conectividad y disponibilidad de símbolos cuando corresponda.",
+      "El pseudocódigo o código sigue un flujo técnicamente plausible."
+    ],
+    "critical_errors": [
+      "Confundir ADS con EtherCAT.",
+      "Leer directamente una entrada física sin identificar runtime o variable PLC.",
+      "Presentar una API inventada como oficial sin aclararlo como pseudocódigo."
+    ]
+  },
+  {
+    "id": "ST_CODE_006",
+    "expected_points": [
+      "Incluye entradas o condiciones de solicitud para MotorA y MotorB y una señal Stop.",
+      "Stop fuerza ambas salidas a FALSE.",
+      "La lógica impide que MotorA y MotorB estén TRUE simultáneamente.",
+      "Define una prioridad o comportamiento determinista si ambas solicitudes aparecen al mismo tiempo.",
+      "Utiliza sintaxis Structured Text válida o conceptualmente válida."
+    ],
+    "critical_errors": [
+      "Permitir que ambas salidas estén TRUE simultáneamente.",
+      "Ignorar la señal Stop."
+    ]
+  },
+  {
+    "id": "ST_CODE_007",
+    "expected_points": [
+      "Identifica como causa posible un enclavamiento, SET/latch o auto-retención.",
+      "Explica que volver Start a FALSE no desactiva una salida enclavada por sí solo.",
+      "Propone una condición explícita de reset o Stop.",
+      "Alternativamente propone lógica no enclavada si la salida debe seguir directamente a Start.",
+      "Revisa asignaciones múltiples que puedan mantener la salida activada."
+    ],
+    "critical_errors": [
+      "Afirmar que una salida enclavada siempre se desactiva cuando Start vuelve a FALSE.",
+      "Proponer eliminar toda condición de parada."
+    ]
+  }
+]

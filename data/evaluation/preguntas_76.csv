@@ -1,0 +1,79 @@
+id,pregunta
+FUND_001,¿Qué es un computador industrial IPC y cuál es su función dentro de un sistema de automatización?
+FUND_002,¿Cuáles son las principales diferencias entre un IPC industrial y un computador de propósito general?
+FUND_003,"Explique la diferencia entre un IPC, un PLC y un controlador embebido. ¿En qué escenario utilizaría cada uno?"
+FUND_004,¿Por qué la ejecución determinista es importante en sistemas de control industrial?
+FUND_005,"Describa el ciclo básico de adquisición de entradas, ejecución de lógica y actualización de salidas en un sistema de control industrial."
+FUND_006,"Se debe controlar una máquina con visión artificial, movimiento, adquisición de datos y comunicación con una base de datos. Justifique si utilizaría un IPC, un PLC tradicional o una combinación de ambos."
+ST_001,¿Qué es Structured Text y para qué se utiliza en programación industrial?
+ST_002,"Explique la función de las estructuras IF, CASE, FOR y WHILE en Structured Text."
+ST_003,Escriba código Structured Text que active una salida Motor cuando Start sea TRUE y la desactive cuando Stop sea TRUE.
+ST_004,Implemente en Structured Text un enclavamiento de marcha/parada con una entrada de parada de emergencia.
+ST_005,Explique qué ocurre con las variables de un programa Structured Text entre ciclos consecutivos de ejecución.
+ST_006,Escriba un programa que cuente flancos positivos de una entrada digital y reinicie el contador mediante una señal Reset.
+ST_007,Un programa utiliza un WHILE cuyo criterio de salida nunca cambia. Explique qué consecuencias puede tener esto dentro de una tarea de control en tiempo real.
+ST_008,"Diseñe en Structured Text una secuencia con tres estados: IDLE, RUNNING y ERROR, utilizando CASE."
+ST_009,Compare el uso de Structured Text con Ladder Diagram para implementar algoritmos complejos y lógica secuencial.
+ST_010,Un motor se activa correctamente pero no se desactiva cuando se pulsa Stop. Describa cómo revisaría la lógica Structured Text para localizar el problema.
+FB_001,¿Qué es un Function Block según IEC 61131-3?
+FB_002,¿Cuál es la diferencia entre una FUNCTION y un FUNCTION_BLOCK?
+FB_003,¿Por qué dos instancias del mismo Function Block pueden tener estados internos diferentes?
+FB_004,"Diseñe conceptualmente un Function Block para controlar un motor con Start, Stop, EmergencyStop y una salida Running."
+FB_005,Diseñe un Function Block reutilizable que detecte una alarma cuando una variable analógica permanezca sobre un límite durante más de cinco segundos.
+FB_006,Explique cuándo conviene encapsular una lógica de control en un Function Block en lugar de escribirla directamente en el programa principal.
+FB_007,Dos motores utilizan el mismo Function Block pero interfieren entre sí. ¿Qué error de implementación podría provocar este comportamiento?
+RT_001,¿Qué significa que una tarea sea cíclica en un sistema de control industrial?
+RT_002,¿Qué diferencia existe entre el tiempo de ciclo configurado de una tarea y el tiempo real que tarda en ejecutarse su código?
+RT_003,¿Qué ocurre si la ejecución de una tarea tarda más que su período configurado?
+RT_004,Explique cómo utilizaría un temporizador TON para activar una salida cinco segundos después de recibir una señal.
+RT_005,"Compare TON, TOF y TP y entregue un ejemplo industrial de cada uno."
+RT_006,"Una tarea está configurada para ejecutarse cada 1 ms, pero el código tarda 1,5 ms. Analice las posibles consecuencias."
+RT_007,Un sistema posee una tarea de movimiento de 1 ms y una tarea de supervisión de 100 ms. Explique por qué es razonable utilizar períodos diferentes.
+RT_008,Un proceso presenta jitter y respuestas inconsistentes. Describa qué aspectos de las tareas y tiempos de ejecución investigaría.
+ECAT_001,¿Qué es EtherCAT y cuál es su función dentro de un sistema de automatización?
+ECAT_002,Explique el papel del EtherCAT Master y de los dispositivos esclavos.
+ECAT_003,¿Qué relación existe entre las variables del programa PLC y los canales físicos de entrada y salida?
+ECAT_004,Describa conceptualmente el proceso para asociar una entrada digital EtherCAT con una variable BOOL de un programa PLC en TwinCAT 3.
+ECAT_005,Un dispositivo EtherCAT aparece detectado pero no alcanza el estado operacional. ¿Qué pasos de diagnóstico realizaría?
+ECAT_006,"Una entrada física cambia eléctricamente, pero la variable vinculada en el programa permanece siempre en FALSE. Indique posibles causas."
+ECAT_007,¿Por qué la sincronización temporal es especialmente importante en aplicaciones EtherCAT con múltiples ejes de movimiento?
+ECAT_008,Explique cómo organizaría las variables de I/O de una máquina con varios módulos EtherCAT para mantener el programa legible y mantenible.
+ADS_001,¿Qué es ADS dentro del ecosistema TwinCAT?
+ADS_002,¿Para qué puede utilizarse ADS entre una aplicación externa y un programa PLC?
+ADS_003,Describa conceptualmente cómo una aplicación externa podría leer una variable PLC mediante ADS.
+ADS_004,Una aplicación ADS puede comunicarse con el IPC pero no puede leer variables PLC. ¿Qué elementos revisaría?
+ADS_005,Compare el uso de ADS con el acceso directo a señales de I/O. ¿Qué función cumple cada mecanismo?
+LIB_001,¿Qué función cumplen las librerías en un proyecto TwinCAT 3?
+LIB_002,¿Por qué es conveniente utilizar bloques y librerías reutilizables en proyectos industriales grandes?
+LIB_003,¿Qué problemas pueden aparecer si un proyecto depende de una versión diferente de una librería respecto de aquella con la que fue desarrollado?
+LIB_004,Explique cómo organizaría código reutilizable para varios tipos de motores presentes en distintas máquinas.
+HMI_001,¿Qué función cumple una HMI dentro de un sistema de automatización industrial?
+HMI_002,¿Qué variables mostraría en una HMI para supervisar un motor industrial y por qué?
+HMI_003,Explique cómo debería representarse una alarma crítica en una interfaz de operación para evitar interpretaciones ambiguas.
+HMI_004,"La variable PLC cambia correctamente, pero el valor mostrado en la HMI no se actualiza. ¿Qué aspectos revisaría?"
+SAFE_001,¿Por qué una parada de emergencia no debería depender exclusivamente de lógica de software estándar?
+SAFE_002,Explique la diferencia entre una condición normal de parada y una condición de seguridad.
+SAFE_003,Un desarrollador propone ignorar temporalmente una señal de seguridad para facilitar pruebas. Explique los riesgos y qué alternativa utilizaría.
+TC_001,¿Qué es TwinCAT 3 y para qué se utiliza?
+TC_002,¿Qué es una POU en TwinCAT 3 y qué tipos principales existen?
+TC_003,Describa conceptualmente el procedimiento para crear un proyecto PLC nuevo en TwinCAT 3.
+TC_004,¿Cómo se crea una tarea cíclica en TwinCAT 3 y cómo se asocia un programa PLC a dicha tarea?
+TC_005,"Explique la diferencia entre compilar un proyecto, activar una configuración y poner el sistema en ejecución en TwinCAT 3."
+TC_006,"Un proyecto TwinCAT 3 compila correctamente, pero el programa PLC no parece ejecutarse. ¿Qué elementos revisaría para localizar el problema?"
+TC_007,"Después de modificar la configuración de hardware en TwinCAT 3, las variables de entrada y salida dejan de actualizarse correctamente. Describa un procedimiento de diagnóstico."
+TC_008,Explique cómo utilizaría la monitorización online de variables en TwinCAT 3 para depurar una secuencia de control que no se comporta como se esperaba.
+TC_009,"Proponga una estructura de proyecto TwinCAT 3 para una máquina que incluya control de motores, gestión de alarmas, comunicaciones industriales y supervisión."
+ST_CODE_001,Escriba código Structured Text que utilice un temporizador TON para activar una salida únicamente después de que una entrada permanezca TRUE durante 3 segundos.
+ST_CODE_002,"Analice el siguiente código Structured Text y explique qué ocurre en cada ciclo de ejecución:
+
+Motor := Start AND NOT Stop;"
+ST_CODE_003,"El siguiente enfoque pretende contar flancos positivos de una entrada digital, pero incrementa el contador en todos los ciclos mientras Input permanece en TRUE. Explique el problema y escriba una versión corregida que incremente el contador solo una vez por flanco positivo."
+ST_CODE_004,"Implemente en Structured Text una máquina de estados con los estados IDLE, STARTING, RUNNING, STOPPING y ERROR utilizando CASE. Incluya transiciones básicas entre estados."
+ST_CODE_005,Un programa utiliza un temporizador TON cuya instancia se declara de manera que no conserva correctamente su estado entre ciclos. Explique por qué esto puede provocar un funcionamiento incorrecto y muestre cómo debería declararse y utilizarse el temporizador.
+FB_CODE_001,"Implemente conceptualmente un FUNCTION_BLOCK llamado FB_Motor con entradas Start, Stop y EmergencyStop, y salidas Running y Fault. Explique brevemente la lógica utilizada."
+FB_CODE_002,Dos motores utilizan accidentalmente la misma instancia de un FUNCTION_BLOCK de control. Explique por qué pueden interferir entre sí y muestre conceptualmente cómo debería corregirse la implementación.
+RT_CODE_001,Un programa ejecutado dentro de una tarea de 1 ms contiene un bucle FOR con 100000 iteraciones. Analice los riesgos temporales que puede provocar y proponga alternativas de diseño.
+ECAT_CODE_001,Muestre conceptualmente cómo declararía en Structured Text una variable BOOL destinada a vincularse con una entrada digital EtherCAT y explique cómo se realiza posteriormente la asociación entre la variable y el canal físico en TwinCAT 3.
+ADS_CODE_001,Escriba pseudocódigo o código de ejemplo que muestre cómo una aplicación externa podría leer una variable de un programa PLC mediante ADS. Explique qué información o parámetros serían necesarios para realizar la comunicación.
+ST_CODE_006,Escriba código Structured Text que controle dos salidas MotorA y MotorB de manera que nunca puedan estar activas al mismo tiempo. Incluya una señal Stop que desactive ambas.
+ST_CODE_007,Revise conceptualmente un programa Structured Text en el que una salida queda permanentemente activada después de pulsar Start aunque posteriormente Start vuelva a FALSE. Explique qué tipo de lógica podría estar provocando este comportamiento y proponga una corrección.

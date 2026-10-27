@@ -1,0 +1,142 @@
+{
+  "fecha_utc": "2026-10-19T14:09:50.301905+00:00",
+  "evaluacion": "automatica_exploratoria",
+  "modelo_juez": "Qwen/Qwen3-VL-4B-Instruct",
+  "preguntas_objetivo": 20,
+  "metricas": {
+    "A": {
+      "preguntas_evaluadas": 20,
+      "precision_at_3": 0.5333333333333333,
+      "hit_at_3": 0.9,
+      "ndcg_at_3": 0.7543679127194612,
+      "precision_por_categoria": {
+        "fundamentos": 0.3333333333333333,
+        "structured_text": 0.6666666666666666,
+        "tiempo_real": 0.5,
+        "ethercat_io": 0.5,
+        "ads_comunicaciones": 0.8333333333333333,
+        "librerias_organizacion": 0.5,
+        "hmi_visualizacion": 0.3333333333333333,
+        "seguridad_buenas_practicas": 0.5,
+        "twincat": 0.8333333333333333,
+        "function_blocks": 0.3333333333333333
+      },
+      "relevancia_por_formato": {
+        "markdown_documental": {
+          "fragmentos": 26,
+          "directamente_relevantes": 12
+        },
+        "transcripcion_video": {
+          "fragmentos": 24,
+          "directamente_relevantes": 13
+        },
+        "pdf_convertido_markdown": {
+          "fragmentos": 10,
+          "directamente_relevantes": 7
+        }
+      }
+    },
+    "B": {
+      "preguntas_evaluadas": 20,
+      "precision_at_3": 0.5333333333333333,
+      "hit_at_3": 0.9,
+      "ndcg_at_3": 0.7896213563887473,
+      "precision_por_categoria": {
+        "fundamentos": 0.5,
+        "structured_text": 0.16666666666666666,
+        "tiempo_real": 0.5,
+        "ethercat_io": 0.6666666666666666,
+        "ads_comunicaciones": 0.8333333333333333,
+        "librerias_organizacion": 0.8333333333333333,
+        "hmi_visualizacion": 0.6666666666666666,
+        "seguridad_buenas_practicas": 0.16666666666666666,
+        "twincat": 0.6666666666666666,
+        "function_blocks": 0.3333333333333333
+      },
+      "relevancia_por_formato": {
+        "pdf_convertido_markdown": {
+          "fragmentos": 12,
+          "directamente_relevantes": 8
+        },
+        "transcripcion_video": {
+          "fragmentos": 33,
+          "directamente_relevantes": 16
+        },
+        "markdown_documental": {
+          "fragmentos": 15,
+          "directamente_relevantes": 8
+        }
+      }
+    },
+    "C": {
+      "preguntas_evaluadas": 20,
+      "precision_at_3": 0.5333333333333333,
+      "hit_at_3": 0.9,
+      "ndcg_at_3": 0.7956732627370424,
+      "precision_por_categoria": {
+        "fundamentos": 0.5,
+        "structured_text": 0.16666666666666666,
+        "tiempo_real": 0.5,
+        "ethercat_io": 0.6666666666666666,
+        "ads_comunicaciones": 0.8333333333333333,
+        "librerias_organizacion": 0.8333333333333333,
+        "hmi_visualizacion": 0.6666666666666666,
+        "seguridad_buenas_practicas": 0.16666666666666666,
+        "twincat": 0.6666666666666666,
+        "function_blocks": 0.3333333333333333
+      },
+      "relevancia_por_formato": {
+        "pdf_convertido_markdown": {
+          "fragmentos": 13,
+          "directamente_relevantes": 8
+        },
+        "transcripcion_video": {
+          "fragmentos": 32,
+          "directamente_relevantes": 16
+        },
+        "markdown_documental": {
+          "fragmentos": 15,
+          "directamente_relevantes": 8
+        }
+      }
+    },
+    "D": {
+      "preguntas_evaluadas": 20,
+      "precision_at_3": 0.5,
+      "hit_at_3": 0.85,
+      "ndcg_at_3": 0.7538507032047345,
+      "precision_por_categoria": {
+        "fundamentos": 0.5,
+        "structured_text": 0.16666666666666666,
+        "tiempo_real": 0.5,
+        "ethercat_io": 0.6666666666666666,
+        "ads_comunicaciones": 1.0,
+        "librerias_organizacion": 0.8333333333333333,
+        "hmi_visualizacion": 0.5,
+        "seguridad_buenas_practicas": 0.16666666666666666,
+        "twincat": 0.3333333333333333,
+        "function_blocks": 0.3333333333333333
+      },
+      "relevancia_por_formato": {
+        "pdf_convertido_markdown": {
+          "fragmentos": 11,
+          "directamente_relevantes": 8
+        },
+        "transcripcion_video": {
+          "fragmentos": 35,
+          "directamente_relevantes": 16
+        },
+        "markdown_documental": {
+          "fragmentos": 14,
+          "directamente_relevantes": 6
+        }
+      }
+    }
+  },
+  "limitaciones": [
+    "Juicios del modelo no equivalen a etiquetas humanas.",
+    "Los textos extensos pueden estar truncados.",
+    "nDCG se calcula contra el pool común de Top 3.",
+    "No se ha evaluado aún la generación de respuestas."
+  ]
+}

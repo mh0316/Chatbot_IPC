@@ -1,0 +1,107 @@
+[
+  {
+    "id": "FUND_001",
+    "category": "fundamentos",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "¿Qué es un computador industrial IPC y cuál es su función dentro de un sistema de automatización?"
+  },
+  {
+    "id": "FUND_004",
+    "category": "fundamentos",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "¿Por qué la ejecución determinista es importante en sistemas de control industrial?"
+  },
+  {
+    "id": "ST_001",
+    "category": "structured_text",
+    "type": "theory",
+    "difficulty": "basic",
+    "question": "¿Qué es Structured Text y para qué se utiliza en programación industrial?"
+  },
+  {
+    "id": "ST_006",
+    "category": "structured_text",
+    "type": "programming",
+    "difficulty": "intermediate",
+    "question": "Escriba un programa que cuente flancos positivos de una entrada digital y reinicie el contador mediante una señal Reset."
+  },
+  {
+    "id": "ST_CODE_001",
+    "category": "structured_text",
+    "type": "programming",
+    "difficulty": "intermediate",
+    "question": "Escriba código Structured Text que utilice un temporizador TON para activar una salida únicamente después de que una entrada permanezca TRUE durante 3 segundos."
+  },
+  {
+    "id": "FB_002",
+    "category": "function_blocks",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "¿Cuál es la diferencia entre una FUNCTION y un FUNCTION_BLOCK?"
+  },
+  {
+    "id": "FB_007",
+    "category": "function_blocks",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "Dos motores utilizan el mismo Function Block pero interfieren entre sí. ¿Qué error de implementación podría provocar este comportamiento?"
+  },
+  {
+    "id": "RT_003",
+    "category": "tiempo_real",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "¿Qué ocurre si la ejecución de una tarea tarda más que su período configurado?"
+  },
+  {
+    "id": "RT_006",
+    "category": "tiempo_real",
+    "type": "analysis",
+    "difficulty": "advanced",
+    "question": "Una tarea está configurada para ejecutarse cada 1 ms, pero el código tarda 1,5 ms. Analice las posibles consecuencias."
+  },
+  {
+    "id": "ECAT_004",
+    "category": "ethercat_io",
+    "type": "configuration",
+    "difficulty": "intermediate",
+    "question": "Describa conceptualmente el proceso para asociar una entrada digital EtherCAT con una variable BOOL de un programa PLC en TwinCAT 3."
+  },
+  {
+    "id": "ADS_003",
+    "category": "ads_comunicaciones",
+    "type": "application",
+    "difficulty": "intermediate",
+    "question": "Describa conceptualmente cómo una aplicación externa podría leer una variable PLC mediante ADS."
+  },
+  {
+    "id": "LIB_003",
+    "category": "librerias_organizacion",
+    "type": "maintenance",
+    "difficulty": "advanced",
+    "question": "¿Qué problemas pueden aparecer si un proyecto depende de una versión diferente de una librería respecto de aquella con la que fue desarrollado?"
+  },
+  {
+    "id": "HMI_004",
+    "category": "hmi_visualizacion",
+    "type": "diagnosis",
+    "difficulty": "advanced",
+    "question": "La variable PLC cambia correctamente, pero el valor mostrado en la HMI no se actualiza. ¿Qué aspectos revisaría?"
+  },
+  {
+    "id": "SAFE_001",
+    "category": "seguridad_buenas_practicas",
+    "type": "theory",
+    "difficulty": "intermediate",
+    "question": "¿Por qué una parada de emergencia no debería depender exclusivamente de lógica de software estándar?"
+  },
+  {
+    "id": "TC_004",
+    "category": "twincat",
+    "type": "configuration",
+    "difficulty": "intermediate",
+    "question": "¿Cómo se crea una tarea cíclica en TwinCAT 3 y cómo se asocia un programa PLC a dicha tarea?"
+  }
+]
